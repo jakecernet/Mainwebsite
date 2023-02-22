@@ -1,2 +1,2 @@
-# Mainwebsite
+# MainWebsite
 My personal website-
