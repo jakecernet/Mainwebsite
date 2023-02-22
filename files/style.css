@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+  transition: 0.5s ease;
+  scroll-behavior: smooth;
+  transition: ease 0.5s;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  height: 80px;
+}
+
+body {
+  margin: 0%;
+  max-width: 100%;
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+  background-image: linear-gradient( 100deg, #23283e 10%, #414757 100%);
+}
+
+body p {
+  padding: 0 10px 0 10px;
+}
+
+.lang {
+  height: 16px;
+}
+
+.body-img {
+  width: 100%;
+}
+
+.inside {
+  vertical-align: middle;
+}
+
+.o-Nas {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: rgb(179, 196, 230);
+  margin-top: 0px;
+  margin-bottom: 120px;
+}
+
+.logo {
+  height: 90px;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  transform: translate(50%, 40%);
+  border: 2px #23283e solid;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  border: 2px white solid;
+  border-radius: 50%;
+  transition-timing-function: ease-in-out;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  color: white;
+  float: right;
+  transform: translate(0%, -40%);
+  border-radius: 9%;
+  border: 1px;
+  cursor: pointer;
+}
+
+.navBar li:hover {
+  border: 1px white solid;
+  border-radius: 9%;
+  border-color: white;
+}
+
+.navbar-link ul {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+}
+
+.navbar-link li {
+  list-style: none;
+}
+
+.navbar-link li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-link {
+    display: none;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+  }
+
+  .navbar-link ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navBar {
+    flex-direction: column;
+
+  }
+
+  .navbar-link.active {
+    display: flex;
+  }
+
+  .logo {
+    transform: translate(0%, 0%);
+    margin-top: 20px;
+    margin-left: 40%;
+  }
+}
+
+.be,
+.ba {
+  width: 15%;
+}
+
+.bu {
+  width: 20%;
+}
+
+.tb {
+  width: 70%;
+  margin: 40px 15% 10px 15%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+.phone-tb {
+  display: none;
+}
+
+.body-inside p {
+  line-height: 145%;
+  font-family: 'Montserrat';
+}
+
+.inside {
+  text-align: center;
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+@media (max-width: 500px) {
+  .headings,
+  .body-inside h1 {
+    font-size: 1.5em;
+
+  }
+}
+
+.podnaslov {
+  max-width: 950px;
+  margin: 30px auto;
+  font-size: 1.6rem;
+  line-height: 1.08;
+  padding: 0 35px;
+}
+
+.naslov {
+  max-width: 1000px;
+  margin: 10px auto;
+  font-size: 2.8rem;
+}
+
+.izbira {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 35px 25px;
+}
+
+.space {
+  padding: 30px;
+}
+
+@media (max-width:1080px) {
+  .space {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .tb {
+    display: none;
+  }
+
+  .phone-tb {
+    display: block;
+  }
+
+  .naslov {
+    font-size: 2rem;
+  }
+
+  .podnaslov {
+    font-size: 1.4rem;
+  }
+}
+
+.enimg{
+  cursor: pointer;
+}
+
+.sloimg{
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.contact_hover{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.discord{
+  width: 80px;
+  opacity: 100%;
+}
+
+.discord_hover{
+  width: 80px;
+  opacity: 0%;
+}
+
+.discord_hover:hover{
+  opacity: 100%;
+}
+
+.discord:hover{
+display: none;
+}
+
+.git{
+  width: 80px;
+  opacity: 100%;
+}
+
+.git_hover{
+  width: 80px;
+  opacity: 0%;
+}
+
+.git_hover:hover{
+  opacity: 100%;
+}
+
+.git:hover{
+  opacity: 0%;
+}
+
+.youtube{
+  width: 80px;
+  opacity: 100%;
+}
+
+.youtube_hover{
+  width: 80px;
+  opacity: 0%;
+}
+
+.youtube_hover:hover{
+  opacity: 100%;
+}
+
+.youtube:hover{
+  opacity: 0%;
+}
+
+.mail{
+  width: 80px;
+  opacity: 100%;
+}
+
+.mail_hover{
+  width: 80px;
+  opacity: 0%;
+}
+
+.mail_hover:hover{
+  opacity: 100%;
+}
+
+.mail:hover{
+  opacity: 0%;
+}
+
+.top{
+  height: 50px;
+  position: sticky;
+  float: right;
+  top: 850px;
+  right: 50px;
+}
+
+.top:hover{
+  opacity: 0.8;
+}
