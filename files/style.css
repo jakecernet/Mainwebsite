@@ -67,6 +67,7 @@ body p {
   border: 2px white solid;
   border-radius: 50%;
   transition-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 2em #ffdb64aa);
 }
 
 .navBar {
@@ -267,6 +268,7 @@ body p {
 
 .discord_hover:hover{
   opacity: 100%;
+  filter: drop-shadow(0 0 2em #4120b8aa);
 }
 
 .discord:hover{
@@ -285,6 +287,7 @@ display: none;
 
 .git_hover:hover{
   opacity: 100%;
+  filter: drop-shadow(0 0 2em #372975aa);
 }
 
 .git:hover{
@@ -303,6 +306,7 @@ display: none;
 
 .youtube_hover:hover{
   opacity: 100%;
+  filter: drop-shadow(0 0 2em #ff0000aa);
 }
 
 .youtube:hover{
@@ -321,6 +325,7 @@ display: none;
 
 .mail_hover:hover{
   opacity: 100%;
+  filter: drop-shadow(0 0 2em #246975aa);
 }
 
 .mail:hover{
