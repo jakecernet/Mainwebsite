@@ -9,8 +9,8 @@
   }
 
 body{
-    font-family: 'Poppins', sans-serif;
     background-image: linear-gradient( 100deg, #23283e 10%, #414757 100%);
+    justify-content: space-between;
 }
 
 ul{
@@ -21,10 +21,41 @@ ul{
     display: flex;
     border: 10px;
     list-style: none;
+    padding: 10px;
+    position: relative;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
 }
 
 a{
     text-decoration: none;
     color: #fff;
     padding: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Source+Sans+Pro&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	line-height: 2em;
+	color: #FFF;
+}
+
+body {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 800px;
+	min-height: 100vh;
 }
