@@ -20,7 +20,7 @@ body {
   max-width: 100%;
   font-family: 'Montserrat';
   overflow-x: hidden;
-  background-image: linear-gradient( 100deg, #1d264e 10%, #5a0d0d 100%);
+  background-image: linear-gradient( 120deg, #1d264e 5%, #310808 100%);
 }
 
 body p {
@@ -268,7 +268,7 @@ body p {
 
 .discord_hover:hover{
   opacity: 100%;
-  filter: drop-shadow(0 0 2em #4120b8aa);
+  filter: drop-shadow(0 0 5em #4120b8aa);
 }
 
 .discord:hover{
@@ -287,7 +287,7 @@ display: none;
 
 .git_hover:hover{
   opacity: 100%;
-  filter: drop-shadow(0 0 2em #372975aa);
+  filter: drop-shadow(0 0 5em #38287caa);
 }
 
 .git:hover{
@@ -306,7 +306,7 @@ display: none;
 
 .youtube_hover:hover{
   opacity: 100%;
-  filter: drop-shadow(0 0 2em #ff0000aa);
+  filter: drop-shadow(0 0 5em #ff0000aa);
 }
 
 .youtube:hover{
@@ -325,7 +325,7 @@ display: none;
 
 .mail_hover:hover{
   opacity: 100%;
-  filter: drop-shadow(0 0 2em #246975aa);
+  filter: drop-shadow(0 0 5em #166a79aa);
 }
 
 .mail:hover{
