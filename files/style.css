@@ -83,9 +83,9 @@ body p {
 }
 
 .navBar li:hover {
-  border: 1px white solid;
   border-radius: 9%;
-  border-color: white;
+  transition-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 2em #fcfcfc);
 }
 
 .navbar-link ul {
@@ -144,15 +144,6 @@ body p {
   }
 }
 
-.be,
-.ba {
-  width: 15%;
-}
-
-.bu {
-  width: 20%;
-}
-
 .tb {
   width: 70%;
   margin: 40px 15% 10px 15%;
@@ -177,35 +168,6 @@ body p {
   font-family: 'Montserrat';
 }
 
-@media (max-width: 500px) {
-  .headings,
-  .body-inside h1 {
-    font-size: 1.5em;
-
-  }
-}
-
-.podnaslov {
-  max-width: 950px;
-  margin: 30px auto;
-  font-size: 1.6rem;
-  line-height: 1.08;
-  padding: 0 35px;
-}
-
-.naslov {
-  max-width: 1000px;
-  margin: 10px auto;
-  font-size: 2.8rem;
-}
-
-.izbira {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 35px 25px;
-}
-
 .space {
   padding: 30px;
 }
@@ -219,18 +181,6 @@ body p {
 @media (max-width: 500px) {
   .tb {
     display: none;
-  }
-
-  .phone-tb {
-    display: block;
-  }
-
-  .naslov {
-    font-size: 2rem;
-  }
-
-  .podnaslov {
-    font-size: 1.4rem;
   }
 }
 
@@ -341,5 +291,6 @@ display: none;
 }
 
 .top:hover{
-  opacity: 0.8;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 5em #000000);
 }
