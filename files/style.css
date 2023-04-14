@@ -140,10 +140,12 @@ body p {
   .menu {
     display: grid;
     place-items: center;
+    margin-top: -200px;
+    margin-left: 45%;
   }
 
   .menu-img {
-    width: 50px;
+    width: 80px;
   }
 
   .menu-img:hover {
