@@ -1,7 +1,9 @@
+var menu = document.getElementById("navbar-link");
+
 function changeToSlo(){
     document.getElementById("about").innerHTML = "O meni";
     document.getElementById("kont").innerHTML = "Kontakt";
-    document.getElementById("file").innerHTML = "Datoteke";
+    document.getElementById("file").innerHTML = "Projekti";
     document.getElementById("about-text").innerHTML = "O meni";
     document.getElementById("cont").innerHTML = "Kontakt";
     document.getElementById("us").innerHTML = "Oj! Sem Jaka, dijak 1. letnika Vegove gimnazije. Trenutno se učim izdelavo spletnih strani, programiranje v JavaScriptu in C++.";
@@ -15,7 +17,7 @@ function changeToSlo(){
 function changeToEng(){
     document.getElementById("about").innerHTML = "About";
     document.getElementById("kont").innerHTML = "Contact";
-    document.getElementById("file").innerHTML = "Files";
+    document.getElementById("file").innerHTML = "Projects";
     document.getElementById("about-text").innerHTML = "About me";
     document.getElementById("cont").innerHTML = "Contact";
     document.getElementById("us").innerHTML = "Hi! I'm Jaka. I'm a student of the first year at Vegova high school. I am currently learning web development, JavaScript and C++.";
@@ -24,4 +26,14 @@ function changeToEng(){
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'visible';
     img2.style.visibility = 'hidden';
+}
+function menuShow(){
+    var menu = document.getElementById("navbar-link");
+    console.log("deluje");
+    if(menu.style.display == "none"){
+        menu.style.display = "block";
+    }
+    else{
+        menu.style.display = "none";
+    }
 }

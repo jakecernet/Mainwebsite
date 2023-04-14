@@ -63,7 +63,7 @@ body p {
   align-items: center;
   color: white;
   float: right;
-  transform: translate(0%, -40%);
+  transform: translate(0%, -240px);
   cursor: pointer;
 }
 
@@ -90,10 +90,32 @@ body p {
   font-size: 1.2rem;
 }
 
+.menu{
+  display: none;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.naslov {
+  font-family: 'Montserrat';
+  color: rgb(179, 196, 230);
+  display: grid;
+  place-items: center;
+}
+
+.naslov a {
+  font-size: 3.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+
 @media (max-width: 800px) {
   .navbar-link {
     display: none;
-    background-color: rgb(240, 240, 240);
     width: 100%;
   }
 
@@ -105,13 +127,35 @@ body p {
 
   .navBar {
     flex-direction: column;
-
+    float: none;
+    margin-top: 260px;
   }
 
   .logo {
     transform: translate(0%, 0%);
     margin-top: 20px;
     margin-left: 40%;
+  }
+
+  .menu {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .menu:hover {
+    filter: drop-shadow(0 0 2em #fcfcfc);
+  }
+
+  .o-Nas {
+    margin-top: 50px;
+  }
+
+  .naslov a {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 50px;
   }
 }
 

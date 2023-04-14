@@ -11,13 +11,19 @@
         <title>Jaka Černetič</title>
         <link rel="stylesheet" href="files/style.css">
         <link rel="icon" href="img/logo.ico">
-        <script src="files/script.js"></script>
     </head>
     <body>
         <div class="top">
             <a href="#top"><img src="img/top.png" alt="" class="top" title="Go back to top."></a>
         </div>
-        <div class="logoDiv"><a href="https://jakecer.tk" title="Jaka Černetič"><img src="img/logo.png" class="logo" alt="" id="top"></a></div>
+        <div class="logoDiv">
+            <a href="https://jakecer.tk" title="Jaka Černetič">
+                <img src="img/logo.png" class="logo" alt="" id="top">
+            </a>
+        </div>
+        <div class="naslov">
+            <a>Jaka Černetič</a>
+        </div>
         <nav class="navBar">
             <div class="toggle-button">
                 <span class="bar"> </span>
@@ -25,24 +31,24 @@
                 <span class="bar">  </span>
 
             </div>
-            <div class="navbar-link">
+            <div class="navbar-link" id="navbar-link">
                 <ul>
                     <li><a id="about" href="#about-text" title="About me">About</a></li>
                     <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
-                    <li><a id="file" href="project" title="Some software.">Projects</a></li>
+                    <li><a id="file" href="project" title="My projects.">Projects</a></li>
                     <li><a onclick="changeToEng()" id="EngLi"><img style="margin: auto;" class="enimg" src="https://jakecer.tk/img/eng.webp" id="eng" alt="" height="20px" title="Changes language to English."></a></li>
                     <li><a onclick="changeToSlo()" id="SloLi"><img style="margin: auto;" class="sloimg" src="https://jakecer.tk/img/sl.png" id="slo" alt="" height="20px" title="Changes language to Sloveian."></a></li>
                 </ul>
             </div>
-
         </nav>
+        <a onclick="menuShow()" class="menu"><img src="img/menu.png" alt="menu" class="menu"></a>
         <div class="inside">
             <div class="o-Nas">
                 <div class="text">
                     <h1 style="margin-top: 400px;" id="about-text">About me</h1>
                     <h3 id="us">Hi! I'm Jaka. I'm a student of the first year at <a href="https://www.vegova.si" style="color: white; text-decoration: none;">Vegova</a>
                          high school. I am currently learning web development, JavaScript, batch and C++.
-                </h3>
+                    </h3>
                 </div>
             </div>
             <div class="lokacija">
@@ -71,5 +77,6 @@
             </div>
         </div>
     <footer><a href="https://jakecer.tk" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration: none;">(c) Jaka Černetič, 2023</a></footer>
+    <script src="files/script.js"></script>
     </body>
 </html>
