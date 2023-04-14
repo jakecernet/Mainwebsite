@@ -1,5 +1,4 @@
 var menu = document.getElementById("navbar-link");
-menu.style.display = "none";
 
 function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
