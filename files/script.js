@@ -1,6 +1,7 @@
 var menu = document.getElementById("navbar-link");
+menu.style.display = "none";
 
-function changeToSlo(){
+function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
     document.getElementById("kont").innerHTML = "Kontakt";
     document.getElementById("file").innerHTML = "Projekti";
@@ -11,10 +12,10 @@ function changeToSlo(){
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'hidden';
-    img2.style.visibility = 'visible';  
+    img2.style.visibility = 'visible';
 }
 
-function changeToEng(){
+function changeToEng() {
     document.getElementById("about").innerHTML = "About";
     document.getElementById("kont").innerHTML = "Contact";
     document.getElementById("file").innerHTML = "Projects";
@@ -27,13 +28,22 @@ function changeToEng(){
     img1.style.visibility = 'visible';
     img2.style.visibility = 'hidden';
 }
-function menuShow(){
-    var menu = document.getElementById("navbar-link");
-    console.log("deluje");
-    if(menu.style.display == "none"){
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
         menu.style.display = "block";
     }
-    else{
+    else {
+        menu.style.display = "none";
+    }
+}
+);
+
+function menuShow() {
+    if (menu.style.display == "none") {
+        menu.style.display = "block";
+    }
+    else {
         menu.style.display = "none";
     }
 }
