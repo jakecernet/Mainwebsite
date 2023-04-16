@@ -14,6 +14,11 @@ header {
   height: 80px;
 }
 
+h1:hover{
+  filter: drop-shadow(0 0 2em #fff);
+  cursor: pointer;
+}
+
 body {
   margin: 0%;
   max-width: 100%;
@@ -180,30 +185,13 @@ body p {
   list-style: none;
 }
 
-.contact_hover {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-}
-
 .discord {
   width: 80px;
   opacity: 100%;
 }
 
-.discord_hover {
-  width: 80px;
-  opacity: 0%;
-}
-
-.discord_hover:hover {
-  opacity: 100%;
-  filter: drop-shadow(0 0 5em #4120b8aa);
-}
-
 .discord:hover {
-  display: none;
+  filter: drop-shadow(0 0 5em #171b58);
 }
 
 .git {
@@ -211,18 +199,8 @@ body p {
   opacity: 100%;
 }
 
-.git_hover {
-  width: 80px;
-  opacity: 0%;
-}
-
-.git_hover:hover {
-  opacity: 100%;
-  filter: drop-shadow(0 0 5em #38287caa);
-}
-
 .git:hover {
-  opacity: 0%;
+  filter: drop-shadow(0 0 5em #401758);
 }
 
 .youtube {
@@ -230,18 +208,8 @@ body p {
   opacity: 100%;
 }
 
-.youtube_hover {
-  width: 80px;
-  opacity: 0%;
-}
-
-.youtube_hover:hover {
-  opacity: 100%;
-  filter: drop-shadow(0 0 5em #ff0000aa);
-}
-
 .youtube:hover {
-  opacity: 0%;
+  filter: drop-shadow(0 0 5em #ff0000);
 }
 
 .mail {
@@ -249,18 +217,8 @@ body p {
   opacity: 100%;
 }
 
-.mail_hover {
-  width: 80px;
-  opacity: 0%;
-}
-
-.mail_hover:hover {
-  opacity: 100%;
-  filter: drop-shadow(0 0 5em #166a79aa);
-}
-
 .mail:hover {
-  opacity: 0%;
+  filter: drop-shadow(0 0 5em #4e94a5);
 }
 
 .top {
@@ -274,4 +232,29 @@ body p {
 .top:hover {
   opacity: 0.9;
   filter: drop-shadow(0 0 5em #000000);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.website1{
+  width: 120px;
+}
+
+.website1:hover{
+  filter: drop-shadow(0 0 5em #dacc0c);
+  filter: grayscale(100%);
+}
+
+.website2{
+  width: 120px;
+}
+
+.website2:hover{
+  filter: drop-shadow(0 0 5em #000);
 }
