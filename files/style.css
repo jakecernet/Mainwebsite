@@ -187,37 +187,41 @@ body p {
 
 .discord {
   width: 80px;
-  opacity: 100%;
+  filter: grayscale(100%);
 }
 
 .discord:hover {
+  filter: grayscale(0%);
   filter: drop-shadow(0 0 5em #171b58);
 }
 
 .git {
   width: 80px;
-  opacity: 100%;
+  filter: grayscale(100%);
 }
 
 .git:hover {
+  filter: grayscale(0%);
   filter: drop-shadow(0 0 5em #401758);
 }
 
 .youtube {
   width: 80px;
-  opacity: 100%;
+  filter: grayscale(100%);
 }
 
 .youtube:hover {
+  filter: grayscale(0%);
   filter: drop-shadow(0 0 5em #ff0000);
 }
 
 .mail {
   width: 80px;
-  opacity: 100%;
+  filter: grayscale(100%);
 }
 
 .mail:hover {
+  filter: grayscale(0%);
   filter: drop-shadow(0 0 5em #4e94a5);
 }
 
@@ -237,9 +241,92 @@ body p {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2.8rem;
   margin: 0 auto;
   padding: 0 1rem;
+  margin-top: 60px;
+}
+
+.project1 a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project1 p{
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.project1 img{
+  margin-top: 30px;
+  float: left;
+  margin-left: 40px;
+}
+
+.project1 a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition: all 0.3s ease;
+  border-radius: 3.5pc;
+}
+
+.project1 a:hover::before {
+  background: rgba(189, 173, 173, 0.603)
+}
+
+.project1 a:hover {
+  color: #fff;
+}
+
+.project2 a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project2 p{
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.project2 img{
+  margin-top: 30px;
+  float: left;
+  margin-left: 40px;
+}
+
+.project2 a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition: all 0.3s ease;
+  border-radius: 3.5pc;
+}
+
+.project2 a:hover::before {
+  background: rgba(189, 173, 173, 0.603);
+}
+
+.project2 a:hover {
+  color: #fff;
 }
 
 .website1{
@@ -248,7 +335,6 @@ body p {
 
 .website1:hover{
   filter: drop-shadow(0 0 5em #dacc0c);
-  filter: grayscale(100%);
 }
 
 .website2{
