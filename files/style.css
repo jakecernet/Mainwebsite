@@ -265,6 +265,7 @@ body p {
 .project1 p{
   padding: 10px;
   margin-top: 20px;
+  font-size: 1.4rem;
 }
 
 .project1 img{
@@ -288,7 +289,8 @@ body p {
 }
 
 .project1 a:hover::before {
-  background: rgba(189, 173, 173, 0.603)
+ background: rgba(61, 61, 61, 0.5);
+ border: #fff 1px solid;
 }
 
 .project1 a:hover {
@@ -311,6 +313,8 @@ body p {
 
 .project2 p{
   padding: 10px;
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
 
 .project2 img{
@@ -334,7 +338,8 @@ body p {
 }
 
 .project2 a:hover::before {
-  background: rgba(189, 173, 173, 0.603);
+  background: rgba(61, 61, 61, 0.597);
+  border: #ffffff solid 1px;
 }
 
 .project2 a:hover {
@@ -375,20 +380,20 @@ body p {
   }
 
   .project1 h1{
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 70px;
+    margin-left: 80px;
     margin-right: 30px;
   }
 
   .project1 p{
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 30px;
   }
 
   .project1 img{
     margin-top: 40px;
     float: left;
-    margin-left: 40px;
+    margin-left: 30px;
     width: 120px;
   }
 
@@ -398,7 +403,7 @@ body p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 320px;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
     transition: all 0.3s ease;
@@ -414,19 +419,20 @@ body p {
   }
 
   .project2 h1{
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 30px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 10px;
   }
 
   .project2 p{
-    padding: 10px;
+    padding: 20px;
+    margin-top: 50px;
   }
 
   .project2 img{
     margin-top: 40px;
     float: left;
-    margin-left: 40px;
+    margin-left: 20px;
     width: 120px;
   }
 
@@ -436,14 +442,10 @@ body p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 320px;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
     transition: all 0.3s ease;
     border-radius: 3.5pc;
-  }
-
-  .project2 a:hover {
-    color: #fff;
   }
 }
