@@ -362,7 +362,7 @@ body p {
   filter: drop-shadow(0 0 5em #000);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2.8rem;
