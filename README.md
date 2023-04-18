@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jakecernet/MainWebsite">
+  <a href="https://jakecer.tk" target="_blank">
     <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
