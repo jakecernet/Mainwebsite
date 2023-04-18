@@ -52,14 +52,14 @@ Project Link: [https://github.com/jakecernet/MainWebsite](https://github.com/jak
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jakecernet/MainWebsite.svg?style=for-the-badge
 [contributors-url]: https://github.com/jakecernet/MainWebsite/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[forks-shield]: https://img.shields.io/github/forks/jakecernet/MainWebsite.svg?style=for-the-badge
+[forks-url]: https://github.com/jakecernet/MainWebsite/network/members
+[stars-shield]: https://img.shields.io/github/stars/jakecernet/MainWebsite.svg?style=for-the-badge
+[stars-url]: https://github.com/jakecernet/MainWebsite/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jakecernet/MainWebsite.svg?style=for-the-badge
+[issues-url]: https://github.com/jakecernet/MainWebsite/issues
 [HTML5]: 	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [Next-url]: https://en.wikipedia.org/wiki/HTML5
 [JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
