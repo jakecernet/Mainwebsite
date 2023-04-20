@@ -2,7 +2,7 @@ var menu = document.getElementById("navbar-link");
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
-        menu.style.display = "block";
+        menu.style.display = "flex";
     }
     else {
         menu.style.display = "none";
@@ -12,7 +12,7 @@ window.addEventListener("resize", function () {
 
 function menuShow() {
     if (menu.style.display == "none") {
-        menu.style.display = "block";
+        menu.style.display = "flex";
     }
     else {
         menu.style.display = "none";

@@ -16,18 +16,19 @@
         <link rel="icon" href="img/logo.ico">
     </head>
     <body>
-        <div class="top">
-            <a href="#top"><img src="img/top.png" alt="Go to top." class="top" title="Go back to top."></a>
+        <div class="mobile">
+            <div class="logoDiv">
+                <a href="https://jakecer.tk" title="Jaka Černetič">
+                    <img src="img/logo.png" class="logo" alt="Logo" id="top">
+                </a>
+            </div> 
+            <div class="menu">
+                <a onclick="menuShow()">
+                    <img src="img/menu.png" alt="Show the menu." class="menu-img">
+                </a>
+            </div>
         </div>
-        <div class="logoDiv">
-            <a href="https://jakecer.tk" title="Jaka Černetič">
-                <img src="img/logo.png" class="logo" alt="Logo" id="top">
-            </a>
-        </div>
-        <div class="naslov">
-            <a>Jaka Černetič</a>
-        </div>
-        <nav class="navBar">
+        <div class="navBar">
             <div class="navbar-link" id="navbar-link">
                 <ul>
                     <li><a id="about" href="#about-text" title="About me">About</a></li>
@@ -37,12 +38,10 @@
                     <li><a onclick="changeToSlo()" id="SloLi"><img style="margin: auto;" class="sloimg" src="https://jakecer.tk/img/sl.png" id="slo" alt="Slovenian" height="20px" title="Changes language to Slovenian."></a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="menu">
-            <a onclick="menuShow()">
-                <img src="img/menu.png" alt="Show the menu." class="menu-img">
-            </a>
         </div>
+        <div class="naslov">
+            <a>Jaka Černetič</a>
+        </div>       
         <div class="inside">
             <div class="o-Nas">
                 <div class="text">
@@ -89,6 +88,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="top">
+            <a href="#top"><img src="img/top.png" alt="Go to top." class="top" title="Go back to top."></a>
         </div>
         <footer><a href="https://jakecer.tk" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration: none;">(c) Jaka Černetič, 2023</a></footer>
         <script src="files/script.js"></script>

@@ -72,7 +72,7 @@ body p {
   align-items: center;
   color: white;
   float: right;
-  transform: translate(0%, -240px);
+  transform: translate(0%, -40px);
   cursor: pointer;
 }
 
@@ -136,21 +136,25 @@ body p {
 
   .navBar {
     flex-direction: column;
-    float: none;
-    margin-top: 260px;
+    margin-top: 220px;
+    align-items: center;
   }
 
   .logo {
     transform: translate(0%, 0%);
-    margin-top: 20px;
-    margin-left: 40%;
+    margin-top: 40px;
+    display: flex;
+    float: left;
+    margin-left: 40px;
+    position: absolute;
   }
 
   .menu {
-    display: grid;
-    place-items: center;
-    margin-top: -200px;
-    margin-left: 45%;
+    display: flex;
+    margin-top: 50px;
+    float: right;
+    margin-right: 40px;
+    position: relative;
   }
 
   .menu-img {
