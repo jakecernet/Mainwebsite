@@ -2,6 +2,7 @@
 <html lang="sl" class=" wdcriqunag idc0_345">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +16,23 @@
         <link rel="icon" href="img/logo.ico">
     </head>
     <body>
-        <div class="mobile">
-            <div class="logoDiv">
-                <a href="https://jakecer.tk" title="Jaka Černetič">
-                    <img src="img/logo.png" class="logo" alt="Logo" id="top">
-                </a>
-            </div> 
-            <div class="menu">
-                <a onclick="menuShow()">
-                    <img src="img/menu.png" alt="Show the menu." class="menu-img">
-                </a>
-            </div>
+        <div class="top">
+            <a href="#top"><img src="img/top.png" alt="Go to top." class="top" title="Go back to top."></a>
         </div>
-        <div class="navBar" id="navBar">
+        <div class="logoDiv">
+            <a href="https://jakecer.tk" title="Jaka Černetič">
+                <img src="img/logo.png" class="logo" alt="Logo" id="top">
+            </a>
+        </div>
+        <div class="naslov">
+            <a>Jaka Černetič</a>
+        </div>
+        <nav class="navBar">
+            <div class="toggle-button">
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+            </div>
             <div class="navbar-link" id="navbar-link">
                 <ul>
                     <li><a id="about" href="#about-text" title="About me">About</a></li>
@@ -37,11 +42,13 @@
                     <li><a onclick="changeToSlo()" id="SloLi"><img style="margin: auto;" class="sloimg" src="https://jakecer.tk/img/sl.png" id="slo" alt="Slovenian" height="20px" title="Changes language to Slovenian."></a></li>
                 </ul>
             </div>
+        </nav>
+        <div class="menu">
+            <a onclick="menuShow()">
+                <img src="img/menu.png" alt="Show the menu." class="menu-img">
+            </a>
         </div>
-        <br>
-        <br>
-        <br>
-        <div>
+        <div class="inside">
             <div class="o-Nas">
                 <div class="text">
                     <h1 style="margin-top: 400px;" id="about-text">About me</h1>
@@ -87,9 +94,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="top">
-            <a href="#top"><img src="img/top.png" alt="Go to top." class="top" title="Go back to top."></a>
         </div>
         <footer><a href="https://jakecer.tk" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration: none;">(c) Jaka Černetič, 2023</a></footer>
         <script src="files/script.js"></script>
