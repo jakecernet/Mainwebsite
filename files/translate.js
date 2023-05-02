@@ -8,10 +8,9 @@ function changeToSlo() {
     document.getElementById("lok").innerHTML = "Tukaj so povezave za moja socialna omrežja.";
     document.getElementById("projects-title").innerHTML = "Projekti";
     document.getElementById("proj").innerHTML = "Tukaj so nekateri moji projekti.";
-    document.getElementById("project1-title").innerHTML = "Moja spletna stran";
-    document.getElementById("proj1-desc").innerHTML = "To je moja osebna spletna stran, ki jo sem izdelal v HTML-u, CSS-u in JavaScriptu.";
-    document.getElementById("project2-title").innerHTML = "KrokyPlus";
-    document.getElementById("proj2-desc").innerHTML = "To je aplikacija, ki bo samodejno naročila kosilo za vas.";
+    document.getElementById("proj1").innerHTML = "Moja osebna spletna stran.";
+    document.getElementById("proj2").innerHTML = "Izboljšava spletne strani za naročanje hrane.";
+    document.getElementById("proj3").innerHTML = "Spletna stran z mojimi igrami, narejenimi v JavaScriptu.";
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'hidden';
@@ -28,10 +27,9 @@ function changeToEng() {
     document.getElementById("lok").innerHTML = "Here are some of my social media links.";
     document.getElementById("projects-title").innerHTML = "Projects";
     document.getElementById("proj").innerHTML = "Here are some of my projects.";
-    document.getElementById("project1-title").innerHTML = "My website";
-    document.getElementById("proj1-desc").innerHTML = "This is my personal website. It is made in HTML, CSS and JavaScript.";
-    document.getElementById("project2-title").innerHTML = "KrokyPlus";
-    document.getElementById("proj2-desc").innerHTML = "This is an app that will automaticly order lunch for you.";
+    document.getElementById("proj1").innerHTML = "My personal website.";
+    document.getElementById("proj2").innerHTML = "Food ordering service improvment.";
+    document.getElementById("proj3").innerHTML = "Website with my games, made in JavaScript.";
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'visible';

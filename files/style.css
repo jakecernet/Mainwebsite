@@ -259,6 +259,9 @@ body p {
   text-decoration: none;
   color: rgb(179, 196, 230);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .grid-item:hover {

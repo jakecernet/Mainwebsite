@@ -18,3 +18,15 @@ function menuShow() {
         menu.style.display = "none";
     }
 }
+
+function jakecer() {
+    window.open("https://jakecer.tk", "_blank");
+}
+
+function kroky() {
+    window.open("https://krokyplus.me", "_blank");
+}
+
+function jsgames() {
+    window.open("https://jsgames.tech", "_blank");
+}
