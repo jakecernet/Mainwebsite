@@ -1,3 +1,6 @@
+var languageSelect = document.getElementById("language-select");
+var selectedLanguage = languageSelect.value;
+
 function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
     document.getElementById("kont").innerHTML = "Kontakt";
@@ -28,10 +31,18 @@ function changeToEng() {
     document.getElementById("projects-title").innerHTML = "Projects";
     document.getElementById("proj").innerHTML = "Here are some of my projects.";
     document.getElementById("proj1").innerHTML = "My personal website.";
-    document.getElementById("proj2").innerHTML = "Food ordering service improvment.";
+    document.getElementById("proj2").innerHTML = "Food ordering service improvement.";
     document.getElementById("proj3").innerHTML = "Website with my games, made in JavaScript.";
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'visible';
     img2.style.visibility = 'hidden';
+}
+
+function translatePage(selectedLanguage) {
+    if (selectedLanguage === "slo") {
+        changeToSlo();
+    } else if (selectedLanguage === "eng") {
+        changeToEng();
+    }
 }

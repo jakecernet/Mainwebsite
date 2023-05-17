@@ -41,18 +41,10 @@
                 <li><a id="about" href="#about-text" title="About me">About</a></li>
                 <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
                 <li><a id="file" href="#project" title="My projects.">Projects</a></li>
-                <li>
-                    <a onclick="changeToEng()" id="EngLi">
-                        <img style="margin: auto;" class="enimg" src="https://jakecer.tk/img/eng.webp" id="eng"
-                            alt="English" height="20px" title="Changes language to English.">
-                    </a>
-                </li>
-                <li>
-                    <a onclick="changeToSlo()" id="SloLi">
-                        <img style="margin: auto;" class="sloimg" src="https://jakecer.tk/img/sl.png" id="slo"
-                            alt="Slovenian" height="20px" title="Changes language to Slovenian.">
-                    </a>
-                </li>
+                <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
+                    <option value="eng">English</option>
+                    <option value="slo">Slovenščina</option>
+                </select>
             </ul>
         </div>
     </nav>
@@ -108,6 +100,11 @@
                     <h1>jsgames.tech</h1>
                     <img src="https://jsgames.tech/files/logo.png" alt="jsgames.tech">
                     <h3 id="proj3">Website with my games, which I made in JavaScript.</h3>
+                </div>
+                <div class="grid-item" onclick="download()">
+                    <h1>YT Downloader</h1>
+                    <img src="img/logo.png" alt="jakecer.tk">
+                    <h3 id="proj4">YouTube to MP3 converter, made in Python.</h3>
                 </div>
             </div>
         </div>
