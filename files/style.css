@@ -3,6 +3,7 @@
 * {
   scroll-behavior: smooth;
   transition: ease 0.5s;
+  color: rgb(121, 138, 214);
 }
 
 
@@ -22,9 +23,9 @@ h1:hover {
 body {
   margin: 0%;
   max-width: 100%;
-  font-family: 'Montserrat';
+  font-family: 'Poppins';
   overflow-x: hidden;
-  background-image: linear-gradient(160deg, #1d264e 5%, #310808 100%);
+  background-image: linear-gradient(160deg, rgb(35, 40, 62) 5%, rgb(26, 29, 44) 100%);
 }
 
 body p {
@@ -38,7 +39,6 @@ body p {
 }
 
 .text {
-  font-family: 'Montserrat';
   text-align: center;
   color: rgb(179, 196, 230);
   margin-top: 0px;
@@ -57,6 +57,7 @@ body p {
   transform: translate(50%, 40%);
   border: 2px #23283e solid;
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 .logo:hover {
@@ -73,7 +74,7 @@ body p {
   color: white;
   float: right;
   margin-right: 50px;
-  transform: translate(0%, -250px);
+  transform: translate(0%, -280px);
   cursor: pointer;
 }
 
@@ -96,7 +97,6 @@ body p {
   color: rgb(255, 255, 255);
   padding: 1rem;
   display: block;
-  font-family: 'Montserrat';
   font-size: 1.2rem;
 }
 
@@ -108,7 +108,6 @@ body p {
   cursor: pointer;
   background-color: #1d264e00;
   color: rgb(255, 255, 255);
-  font-family: 'Montserrat';
   font-size: 1.2rem;
   height: 40px;
   width: 80px;
@@ -138,18 +137,21 @@ body p {
 }
 
 .naslov {
-  font-family: 'Montserrat';
   color: rgb(179, 196, 230);
   display: grid;
   place-items: center;
 }
 
 .naslov a {
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 900;
   text-align: center;
   margin-bottom: 0px;
   margin-top: 150px;
+}
+
+.naslov a:hover {
+  color: rgb(144, 156, 255);
 }
 
 @media (max-width: 800px) {
@@ -272,25 +274,29 @@ body p {
 }
 
 .grid-item {
-  background-color: #be55550e;
+  background-color: rgb(35, 40, 62);
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
-  border: 1px solid rgb(179, 196, 230);
-  border-radius: 12px;
+  border: 0px solid rgb(35, 40, 62);
+  border-radius: 2px;
   text-decoration: none;
   color: rgb(179, 196, 230);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: 0.3s;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
+  box-shadow: 0 0 10px #000000;
 }
 
 .grid-item:hover {
   cursor: pointer;
-  background-color: #a04f4fa9;
+  background-color: rgb(31, 35, 54);
+  scale: 1.01;
+  transition: 0.2s;
+  animation: forwards;
+  box-shadow: 0px 10px 20px #000000;
 }
 
 .grid-item img {
@@ -313,4 +319,15 @@ body p {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding-left: 2px;
+  color: rgb(255, 255, 255);
+  height: 100px;
+  margin-top: 100px;
 }
