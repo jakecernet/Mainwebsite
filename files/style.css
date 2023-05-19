@@ -15,11 +15,6 @@ header {
   height: 80px;
 }
 
-h1:hover {
-  filter: drop-shadow(0 0 2em #fff);
-  cursor: pointer;
-}
-
 body {
   margin: 0%;
   max-width: 100%;
@@ -76,10 +71,6 @@ body p {
   margin-right: 50px;
   transform: translate(0%, -280px);
   cursor: pointer;
-}
-
-.navBar li:hover {
-  filter: drop-shadow(0 0 2em #fcfcfc);
 }
 
 .navbar-link ul {
@@ -287,16 +278,16 @@ body p {
   margin-right: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 4px #000000;
 }
 
 .grid-item:hover {
   cursor: pointer;
-  background-color: rgb(31, 35, 54);
-  scale: 1.01;
+  background-color: rgb(24, 27, 43);
+  scale: 1.04;
   transition: 0.2s;
   animation: forwards;
-  box-shadow: 0px 10px 20px #000000;
+  box-shadow: 10px 10px 20px #000000b4;
 }
 
 .grid-item img {
