@@ -103,9 +103,11 @@ body p {
   height: 40px;
   width: 80px;
   align-items: center;
-  border-radius: 2px;
   transition: 0.3s;
   text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .dropdown:focus {
