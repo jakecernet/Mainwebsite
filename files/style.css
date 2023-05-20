@@ -154,6 +154,14 @@ body p {
   .navbar-link ul {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-link ul li {
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
 
@@ -195,6 +203,12 @@ body p {
     margin-bottom: 0px;
     margin-top: 50px;
   }
+
+  .dropdown {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .contact {
@@ -212,7 +226,6 @@ body p {
 
 .discord:hover {
   filter: grayscale(0%);
-  filter: drop-shadow(0 0 5em #171b58);
 }
 
 .git {
@@ -222,7 +235,6 @@ body p {
 
 .git:hover {
   filter: grayscale(0%);
-  filter: drop-shadow(0 0 5em #401758);
 }
 
 .youtube {
@@ -232,7 +244,6 @@ body p {
 
 .youtube:hover {
   filter: grayscale(0%);
-  filter: drop-shadow(0 0 5em #ff0000);
 }
 
 .mail {
@@ -242,7 +253,6 @@ body p {
 
 .mail:hover {
   filter: grayscale(0%);
-  filter: drop-shadow(0 0 5em #4e94a5);
 }
 
 .top {
@@ -260,8 +270,8 @@ body p {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .grid-item {
@@ -269,15 +279,14 @@ body p {
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
-  border: 0px solid rgb(35, 40, 62);
   border-radius: 2px;
   text-decoration: none;
   color: rgb(179, 196, 230);
   transition: 0.3s;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 0 4px #000000;
 }
 
@@ -309,6 +318,34 @@ body p {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .contact {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -20px;
+  }
+
+  .contact li {
+    margin-top: 40px;
+    border: 1px solid rgb(35, 40, 62);
+    border-radius: 5px;
+    background-color: rgb(35, 40, 62);
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+  }
+
+  .contact li:hover {
+    background-color: rgb(24, 27, 43);
+    transition: 0.3s;
+    box-shadow: 10px 10px 20px #000000b4;
+  }
+
+  .contact li a img {
+    width: 150px;
   }
 }
 

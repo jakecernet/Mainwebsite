@@ -32,20 +32,17 @@
         <a>Jaka Černetič</a>
     </div>
     <nav class="navBar">
-        <div class="toggle-button">
-            <span class="bar"> </span>
-            <span class="bar"> </span>
-            <span class="bar"> </span>
-        </div>
         <div class="navbar-link" id="navbar-link">
             <ul>
                 <li><a id="about" href="#about-text" title="About me">About</a></li>
                 <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
                 <li><a id="file" href="#project" title="My projects.">Projects</a></li>
-                <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
-                    <option value="eng">ENG</option>
-                    <option value="slo">SLO</option>
-                </select>
+                <li>
+                    <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
+                        <option value="eng">ENG</option>
+                        <option value="slo">SLO</option>
+                    </select>
+                </li>
             </ul>
         </div>
     </nav>
@@ -69,15 +66,20 @@
                 <h1 id="cont" style="margin-top: 200px;">Contact</h1>
                 <h3 id="lok">Here are some of my social media links.</h3>
                 <ul class="contact" style="margin-top: 100px;">
-                    <li><a href="discord" target="_blank"><img src="img/discord.png" alt="Discord" class="discord"></a>
+                    <li>
+                        <a href="discord" target="_blank">
+                            <img src="img/discord.png" alt="Discord" class="discord">
+                        </a>
                     </li>
-
-                    <li><a href="git" target="_blank"><img src="img/git.png" alt="GitHub" class="git"></a></li>
-
-                    <li><a href="youtube" target="_blank"><img src="img/youtube.png" alt="Youtube" class="youtube"></a>
+                    <li>
+                        <a href="git" target="_blank"><img src="img/git.png" alt="GitHub" class="git"></a>
                     </li>
-
-                    <li><a href="mail" target="_blank"><img src="img/mail.png" alt="Mail" class="mail"></a></li>
+                    <li>
+                        <a href="youtube" target="_blank"><img src="img/youtube.png" alt="Youtube" class="youtube"></a>
+                    </li>
+                    <li>
+                        <a href="mail" target="_blank"><img src="img/mail.png" alt="Mail" class="mail"></a>
+                    </li>
                 </ul>
             </div>
         </div>

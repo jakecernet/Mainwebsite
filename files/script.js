@@ -30,3 +30,7 @@ function kroky() {
 function jsgames() {
     window.open("https://jsgames.tech", "_blank");
 }
+
+function download() {
+    window.open("https://", "_blank")
+}
