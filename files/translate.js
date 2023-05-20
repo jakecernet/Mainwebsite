@@ -14,6 +14,8 @@ function changeToSlo() {
     document.getElementById("proj1").innerHTML = "Moja osebna spletna stran.";
     document.getElementById("proj2").innerHTML = "Izboljšava spletne strani za naročanje hrane.";
     document.getElementById("proj3").innerHTML = "Spletna stran z mojimi igrami, narejenimi v JavaScriptu.";
+    document.getElementById("proj4").innerHTML = "Pretvornik iz YouTuba v MP3, napisan v Pythonu.";
+    document.getElementById("proj5").innerHTML = "Preprosta spletna beležka.";
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'hidden';
@@ -33,6 +35,8 @@ function changeToEng() {
     document.getElementById("proj1").innerHTML = "My personal website.";
     document.getElementById("proj2").innerHTML = "Food ordering service improvement.";
     document.getElementById("proj3").innerHTML = "Website with my games, made in JavaScript.";
+    document.getElementById("proj4").innerHTML = "YouTube to MP3 converter, made in Python.";
+    document.getElementById("proj5").innerHTML = "Simple notes taking website.";
     var img1 = document.getElementById('SloLi');
     var img2 = document.getElementById('EngLi');
     img1.style.visibility = 'visible';

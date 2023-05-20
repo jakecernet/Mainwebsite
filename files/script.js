@@ -32,5 +32,9 @@ function jsgames() {
 }
 
 function download() {
-    window.open("https://", "_blank")
+    window.open("https://github.com/jakecernet/YT_Downloader", "_blank")
+}
+
+function notes() {
+    window.open("https://jakecernet.github.io/Notes/", "_blank")
 }

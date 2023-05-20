@@ -119,6 +119,38 @@ body p {
   transition: 0.3s;
 }
 
+.dropdown-eng {
+  background-color: #23283e;
+}
+
+.dropdown-eng:hover {
+  background-color: #23283e;
+}
+
+.dropdown-eng:focus {
+  background-color: #23283e;
+}
+
+.dropdown-eng:active {
+  background-color: #23283e;
+}
+
+.dropdown-slo {
+  background-color: #23283e;
+}
+
+.dropdown-slo:hover {
+  background-color: #23283e;
+}
+
+.dropdown-slo:focus {
+  background-color: #23283e;
+}
+
+.dropdown-slo:active {
+  background-color: #23283e;
+}
+
 .menu {
   display: none;
   width: 50px;
@@ -272,6 +304,7 @@ body p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  padding: 30px;
 }
 
 .grid-item {
@@ -283,10 +316,7 @@ body p {
   text-decoration: none;
   color: rgb(179, 196, 230);
   transition: 0.3s;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 0 4px #000000;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sl" class=" wdcriqunag idc0_345">
+<html>
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@
                 <li><a id="file" href="#project" title="My projects.">Projects</a></li>
                 <li>
                     <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
-                        <option value="eng">ENG</option>
-                        <option value="slo">SLO</option>
+                        <option value="eng" class="dropdown-eng">ENG</option>
+                        <option value="slo" class="dropdown-slo">SLO</option>
                     </select>
                 </li>
             </ul>
@@ -100,14 +100,19 @@
                     <h3 id="proj2">Food ordering service improvment.</h3>
                 </div>
                 <div class="grid-item" onclick="jsgames()">
-                    <h1>jsgames.tech</h1>
+                    <h1>JSGames</h1>
                     <img src="https://jsgames.tech/files/logo.png" alt="jsgames.tech">
-                    <h3 id="proj3">Website with my games, which I made in JavaScript.</h3>
+                    <h3 id="proj3">Website with my JavaScript games.</h3>
                 </div>
                 <div class="grid-item" onclick="download()">
                     <h1>YT Downloader</h1>
                     <img src="img/logo.png" alt="jakecer.tk">
                     <h3 id="proj4">YouTube to MP3 converter, made in Python.</h3>
+                </div>
+                <div class="grid-item" onclick="notes()">
+                    <h1>Notes</h1>
+                    <img src="https://jakecernet.github.io/Notes/icon.png" alt="jakecer.tk">
+                    <h3 id="proj5">Simple notes taking website.</h3>
                 </div>
             </div>
         </div>
