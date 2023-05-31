@@ -38,3 +38,14 @@ function download() {
 function notes() {
     window.open("https://jakecernet.github.io/Notes/", "_blank")
 }
+
+window.addEventListener('scroll', function () {
+    var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    var scrollToTop = document.querySelector('.top');
+    if (scrollPos > 400) {
+        scrollToTop.style.display = 'block';
+    } else {
+        scrollToTop.style.display = 'none';
+    }
+});
