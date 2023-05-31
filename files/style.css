@@ -47,7 +47,7 @@ body p {
 .logo {
   height: 90px;
   display: flex;
-  justify-content: space;
+  justify-content: center;
   align-items: center;
   transform: translate(50%, 40%);
   border: 2px #23283e solid;
@@ -57,9 +57,9 @@ body p {
 
 .logo:hover {
   border: 2px white solid;
-  border-radius: 50%;
-  transition-timing-function: ease-in-out;
-  filter: drop-shadow(0 0 2em #ffdb64aa);
+  transition: 0.3s;
+  box-shadow: 10px 10px 20px #000000b4;
+
 }
 
 .navBar {
