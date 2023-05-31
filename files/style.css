@@ -91,6 +91,14 @@ body p {
   font-size: 1.2rem;
 }
 
+.navbar-link li a:hover {
+  color: rgb(144, 156, 255);
+  text-shadow: 2px 4px 4px #747474;
+  transition: 0.3s;
+  scale: 1.4;
+  margin-top: 5px;
+}
+
 .dropdown {
   margin-left: 10px;
   margin-top: 8px;
@@ -153,6 +161,11 @@ body p {
   background-color: #23283e;
 }
 
+h1:hover {
+  color: rgb(144, 156, 255);
+  transition: 0.3s;
+}
+
 .menu {
   display: none;
   width: 50px;
@@ -165,6 +178,14 @@ body p {
   color: rgb(179, 196, 230);
   display: grid;
   place-items: center;
+}
+
+.naslov a:hover {
+  color: rgb(144, 156, 255);
+  text-shadow: 2px 4px 4px #747474;
+  transition: 0.3s;
+  scale: 1.1;
+  text-decoration: none;
 }
 
 .naslov a {
@@ -247,46 +268,28 @@ body p {
 
 .contact {
   display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
   padding-left: 2px;
 }
 
-.discord {
-  width: 90px;
-  filter: grayscale(100%);
+.contact-item {
+  align-items: center;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  height: 120px;
 }
 
-.discord:hover {
-  filter: grayscale(0%);
-}
-
-.git {
-  width: 90px;
-  filter: grayscale(100%);
-}
-
-.git:hover {
-  filter: grayscale(0%);
-}
-
-.youtube {
-  width: 90px;
-  filter: grayscale(100%);
-}
-
-.youtube:hover {
-  filter: grayscale(0%);
-}
-
-.mail {
-  width: 90px;
-  filter: grayscale(100%);
-}
-
-.mail:hover {
-  filter: grayscale(0%);
+.contact-item:hover {
+  background-color: rgb(24, 27, 43);
+  transition: 0.3s;
+  box-shadow: 10px 10px 20px #000000b4;
+  opacity: 0.9;
+  filter: grayscale(0.5);
+  scale: 1.1;
 }
 
 .top {
@@ -359,7 +362,7 @@ body p {
     margin-top: -20px;
   }
 
-  .contact li {
+  .contact ul li {
     margin-top: 40px;
     border: 1px solid rgb(35, 40, 62);
     border-radius: 5px;
@@ -370,13 +373,13 @@ body p {
     margin-bottom: 20px;
   }
 
-  .contact li:hover {
+  .contact ul li:hover {
     background-color: rgb(24, 27, 43);
     transition: 0.3s;
     box-shadow: 10px 10px 20px #000000b4;
   }
 
-  .contact li a img {
+  .contact ul li a img {
     width: 150px;
   }
 }
@@ -390,4 +393,16 @@ footer {
   color: rgb(255, 255, 255);
   height: 100px;
   margin-top: 100px;
+}
+
+.vegova {
+  color: rgb(167, 179, 223);
+  text-decoration: none;
+}
+
+.vegova:hover {
+  color: rgb(244, 245, 255);
+  scale: 1.1;
+  transition: 0.3s;
+  text-shadow: 0 5px 5px #000000;
 }
