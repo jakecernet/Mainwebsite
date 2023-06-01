@@ -31,6 +31,7 @@ body p {
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
+  margin: 40px;
 }
 
 .text {
@@ -44,32 +45,34 @@ body p {
   padding: 10px;
 }
 
-.logo {
-  height: 90px;
+.logoDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(50%, 40%);
-  border: 2px #23283e solid;
-  border-radius: 50%;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
 }
 
-.logo:hover {
-  border: 2px white solid;
-  transition: 0.3s;
-  box-shadow: 10px 10px 20px #000000b4;
+.logoDiv a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #000000;
+}
 
+.logoDiv a img:hover {
+  box-shadow: 10px 10px 10px #000000;
+  scale: 1.1;
 }
 
 .navBar {
   display: flex;
   justify-content: space;
   align-items: center;
-  color: white;
   float: right;
-  margin-right: 50px;
-  transform: translate(0%, -280px);
+  margin-right: 20px;
+  margin-top: 45px;
   cursor: pointer;
 }
 
@@ -174,32 +177,6 @@ h1:hover {
   cursor: pointer;
 }
 
-.naslov {
-  color: rgb(179, 196, 230);
-  display: grid;
-  place-items: center;
-}
-
-.naslov a:hover {
-  color: rgb(144, 156, 255);
-  text-shadow: 2px 4px 4px #747474;
-  transition: 0.3s;
-  scale: 1.1;
-  text-decoration: none;
-}
-
-.naslov a {
-  font-size: 4rem;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 150px;
-}
-
-.naslov a:hover {
-  color: rgb(144, 156, 255);
-}
-
 @media (max-width: 800px) {
   .navbar-link {
     display: none;
@@ -220,49 +197,44 @@ h1:hover {
     width: 100%;
   }
 
-  .navBar {
-    flex-direction: column;
-    float: none;
-    margin-top: 260px;
+  .logoDiv {
+    margin-top: -140px;
+    margin-left: 10px;
+    float: left;
   }
 
-  .logo {
-    transform: translate(0%, 0%);
-    margin-top: 20px;
-    margin-left: 40%;
+  .logoDiv a img {
+    width: 80px;
+    height: 80px;
   }
 
   .menu {
-    display: grid;
+    display: flex;
+    margin-top: -130px;
+    margin-right: 20px;
+    float: right;
+  }
+
+  .menu img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu img:hover {
+    scale: 1.1;
+  }
+
+  .navBar {
+    float: none;
+    margin-top: 160px;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;
     place-items: center;
-    margin-top: -200px;
-    margin-left: 45%;
-  }
-
-  .menu-img {
-    width: 80px;
-  }
-
-  .menu-img:hover {
-    filter: drop-shadow(0 0 2em #fcfcfc);
   }
 
   .o-Nas {
-    margin-top: 50px;
-  }
-
-  .naslov a {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 50px;
-  }
-
-  .dropdown {
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: -60px;
   }
 }
 
