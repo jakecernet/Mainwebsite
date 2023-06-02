@@ -177,7 +177,7 @@ h1:hover {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .navbar-link {
     display: none;
     width: 100%;
@@ -339,7 +339,7 @@ h1:hover {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
   }
