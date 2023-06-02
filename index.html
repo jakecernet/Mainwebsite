@@ -20,56 +20,60 @@
 </head>
 
 <body>
-    <div class="logoDiv">
-        <a href="https://jakecer.tk" title="Jaka Černetič">
-            <img src="img/logo.png" class="logo" alt="Logo" id="top">
-        </a>
-    </div>
-    <div class="menu">
-        <a onclick="menuShow()">
-            <img src="img/menu.png" alt="Show the menu." class="menu-img">
-        </a>
-    </div>
-    <div class="navBar">
-        <div class="navbar-link" id="navbar-link">
-            <ul>
-                <li><a id="about" href="#about-text" title="About me">About</a></li>
-                <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
-                <li><a id="file" href="#project" title="My projects.">Projects</a></li>
-                <li>
-                    <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
-                        <option value="eng" class="dropdown-eng">ENG</option>
-                        <option value="slo" class="dropdown-slo">SLO</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-    </div>
     <div>
-        <span>‎</span>
-    </div>
-    <div class="inside">
-        <div class="o-Nas">
-            <div class="text">
-                <h1 style="margin-top: 200px;" id="about-text">About me</h1>
-                <h1 id="us" style="font-family: Arial, Helvetica, sans-serif; font-weight: 9000; font-style: bold;">Hi!
-                    I'm Jaka Černetič. I'm a student in the first grade at
-                    <a href="https://www.vegova.si" class="vegova">Vegova</a>
-                    high school. I am currently learning web development, JavaScript, batch and C++.
-                </h1>
-            </div>
+        <div class="logoDiv">
+            <a href="https://jakecer.tk" title="Jaka Černetič">
+                <img src="img/logo.png" class="logo" alt="Logo" id="top">
+            </a>
         </div>
-        <div class="lokacija">
-            <div class="text" id="lokacija">
-                <h1 id="cont" style="margin-top: 200px;">Contact</h1>
-                <h3 id="lok">Here are some of my social media links.</h3>
-                <ul class="contact" style="margin-top: 100px;">
-                    <li><a href="discord"><img src="img/discord.png" alt="" class="contact-item"></a></li>
-                    <li><a href="git"><img src="img/git.png" alt="" class="contact-item"></a></li>
-                    <li><a href="youtube"><img src="img/youtube.png" alt="" class="contact-item"></a></li>
-                    <li><a href="mail"><img src="img/mail.png" alt="" class="contact-item"></a></li>
+        <div class="menu">
+            <a onclick="menuShow()">
+                <img src="img/menu.png" alt="Show the menu." class="menu-img">
+            </a>
+        </div>
+        <div class="navBar">
+            <div class="navbar-link" id="navbar-link">
+                <ul>
+                    <li><a id="about" href="#about-text" title="About me">About</a></li>
+                    <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
+                    <li><a id="file" href="#project" title="My projects.">Projects</a></li>
+                    <li>
+                        <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
+                            <option value="eng" class="dropdown-eng">ENG</option>
+                            <option value="slo" class="dropdown-slo">SLO</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div>
+            <span>‎</span>
+        </div>
+        <div class="inside">
+            <div class="o-Nas">
+                <div class="text">
+                    <h1 style="margin-top: 200px;" id="about-text"></h1>
+                    <h1 id="us">
+                        Hi! I'm Jaka Černetič.
+                    </h1>
+                </div>
+                <h2 id="us-h2">I'm a student in the first grade at
+                    <a href="https://www.vegova.si" class="vegova">Vegova</a>
+                    high school. I am currently learning web development, JavaScript, batch and C++.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="lokacija" style="margin-top: 30%;">
+        <div class="text" id="lokacija">
+            <h1 id="cont">Contact</h1>
+            <h3 id="lok">Here are some of my social media links.</h3>
+            <ul class="contact" style="margin-top: 100px;">
+                <li><a href="discord"><img src="img/discord.png" alt="" class="contact-item"></a></li>
+                <li><a href="git"><img src="img/git.png" alt="" class="contact-item"></a></li>
+                <li><a href="youtube"><img src="img/youtube.png" alt="" class="contact-item"></a></li>
+                <li><a href="mail"><img src="img/mail.png" alt="" class="contact-item"></a></li>
+            </ul>
         </div>
     </div>
     <div class="project">
