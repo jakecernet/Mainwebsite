@@ -3,9 +3,10 @@ var selectedLanguage = languageSelect.value;
 
 function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
-    document.getElementById("kont").innerHTML = "Kontakt";
+    document.getElementById("kont").innerHTML = "Povezave";
     document.getElementById("file").innerHTML = "Projekti";
-    document.getElementById("cont").innerHTML = "Kontakt";
+    document.getElementById("cont").innerHTML = "Povezave";
+    document.getElementById("contact").innerHTML = "Kontakt";
     document.getElementById("us").innerHTML = "Oj! Sem Jaka Černetič.";
     document.getElementById("us-h2").innerHTML = "Sem dijak prvega letnika Vegove gimnazije. Trenutno se učim izdelavo spletnih strani, JavaScript, batch in C++.";
     document.getElementById("lok").innerHTML = "Tukaj so povezave za moja socialna omrežja.";
@@ -17,17 +18,16 @@ function changeToSlo() {
     document.getElementById("proj4").innerHTML = "Pretvornik iz YouTuba v MP3, napisan v Pythonu.";
     document.getElementById("proj5").innerHTML = "Preprosta spletna beležka.";
     document.getElementById("proj6").innerHTML = "Spletna stran za naš razred.";
-    var img1 = document.getElementById('SloLi');
-    var img2 = document.getElementById('EngLi');
-    img1.style.visibility = 'hidden';
-    img2.style.visibility = 'visible';
+    document.getElementById("cont-me").innerHTML = "Kontakt";
+    document.getElementById("cont-me-h2").innerHTML = "Če me želite kontaktirati, lahko to storite tukaj.";
 }
 
 function changeToEng() {
     document.getElementById("about").innerHTML = "About me";
-    document.getElementById("kont").innerHTML = "Contact";
+    document.getElementById("kont").innerHTML = "Links";
     document.getElementById("file").innerHTML = "Projects";
-    document.getElementById("cont").innerHTML = "Contact";
+    document.getElementById("cont").innerHTML = "Links";
+    document.getElementById("contact").innerHTML = "Contact me";
     document.getElementById("us").innerHTML = "Hi! I'm Jaka Černetič.";
     document.getElementById("us-h2").innerHTML = "I'm a student in the first grade at Vegova high school. I am currently learning web development, JavaScript, batch and C++.";
     document.getElementById("lok").innerHTML = "Here are some of my social media links.";
@@ -39,10 +39,8 @@ function changeToEng() {
     document.getElementById("proj4").innerHTML = "YouTube to MP3 converter, made in Python.";
     document.getElementById("proj5").innerHTML = "Simple notes taking website.";
     document.getElementById("proj6").innerHTML = "A website for our class.";
-    var img1 = document.getElementById('SloLi');
-    var img2 = document.getElementById('EngLi');
-    img1.style.visibility = 'visible';
-    img2.style.visibility = 'hidden';
+    document.getElementById("cont-me").innerHTML = "Contact me";
+    document.getElementById("cont-me-h2").innerHTML = "If you want to contact me, you can do it here.";
 }
 
 function translatePage(selectedLanguage) {

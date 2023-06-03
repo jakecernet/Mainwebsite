@@ -36,8 +36,9 @@
             <div class="navbar-link" id="navbar-link">
                 <ul>
                     <li><a id="about" href="#about-text" title="About me">About me</a></li>
-                    <li><a id="kont" href="#cont" title="My contacs">Contact</a></li>
+                    <li><a id="kont" href="#cont" title="My contacs">Links</a></li>
                     <li><a id="file" href="#project" title="My projects.">Projects</a></li>
+                    <li><a id="contact" href="#cont-me" title="Contact me">Contact me</a></li>
                     <li>
                         <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
                             <option value="eng" class="dropdown-eng">ENG</option>
@@ -72,7 +73,7 @@
     </div>
     <div class="lokacija" style="margin-top: 30%;">
         <div class="text" id="lokacija">
-            <h1 id="cont">Contact</h1>
+            <h1 id="cont">Links</h1>
             <h3 id="lok">Here are some of my social media links.</h3>
             <ul class="contact" style="margin-top: 100px;">
                 <li><a href="discord"><img src="img/discord.png" alt="" class="contact-item"></a></li>
@@ -124,11 +125,11 @@
         <a href="#top"><img src="img/top.png" alt="Go to top." title="Go back to top."></a>
     </div>
     <div class="form">
-        <h1 class="cont-me">Contact me</h1>
-        <h3 class="cont-me">If you want to contact me, you can do it here.</h3>
+        <h1 class="cont-me" id="cont-me">Contact me</h1>
+        <h3 class="cont-me" id="cont-me-h2">If you want to contact me, you can do it here.</h3>
         <form action="https://formspree.io/f/xnqykpza" method="POST">
-            <input type="text" name="name" placeholder="Name" class="form-item" required>
-            <input type="email" name="email" placeholder="Email" class="form-item" required>
+            <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
+            <input type="email" name="email" placeholder="Email" class="form-item" required id="email">
             <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-item"
                 required></textarea>
             <input type="submit" value="Send" class="form-item" id="send">
