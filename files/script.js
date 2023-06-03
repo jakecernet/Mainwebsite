@@ -39,6 +39,10 @@ function notes() {
     window.open("https://jakecernet.github.io/Notes/", "_blank")
 }
 
+function spaces() {
+    window.open("https://spaces.tk", "_blank")
+}
+
 window.addEventListener('scroll', function () {
     var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 

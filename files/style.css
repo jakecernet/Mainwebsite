@@ -90,16 +90,29 @@ body p {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 1rem;
-  display: block;
+  display: inline-block;
+  position: relative;
   font-size: 1.2rem;
 }
 
-.navbar-link li a:hover {
-  color: rgb(144, 156, 255);
-  text-shadow: 2px 4px 4px #747474;
-  transition: 0.3s;
-  scale: 1.4;
-  margin-top: 5px;
+.navbar-link li a::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  margin-left: 11%;
+  transform: scaleX(0);
+  height: 5px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-link li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .dropdown {
@@ -417,27 +430,6 @@ h1:hover {
     place-items: center;
     grid-template-columns: repeat(1, 1fr);
     margin-top: -20px;
-  }
-
-  .contact ul li {
-    margin-top: 40px;
-    border: 1px solid rgb(35, 40, 62);
-    border-radius: 5px;
-    background-color: rgb(35, 40, 62);
-    padding: 10px;
-    display: grid;
-    place-items: center;
-    margin-bottom: 20px;
-  }
-
-  .contact ul li:hover {
-    background-color: rgb(24, 27, 43);
-    transition: 0.3s;
-    box-shadow: 10px 10px 20px #000000b4;
-  }
-
-  .contact ul li a img {
-    width: 150px;
   }
 
   .arrow {
