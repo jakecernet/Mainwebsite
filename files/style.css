@@ -37,6 +37,10 @@ h1 {
   transition: 0.3s;
 }
 
+.intro {
+  height: 99.9vh;
+}
+
 .o-Nas {
   position: relative;
   text-align: center;
@@ -277,15 +281,24 @@ h1:hover {
 }
 
 .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
   bottom: 0;
-  margin-top: 100px;
-  position: -webkit-sticky;
-  position: sticky
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1Vh;
+}
+
+.arrow a img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+
 }
 
 @-webkit-keyframes bounce {
@@ -294,7 +307,7 @@ h1:hover {
   20%,
   50%,
   80%,
-  to {
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0)
   }
@@ -316,7 +329,7 @@ h1:hover {
   20%,
   50%,
   80%,
-  to {
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0)
   }
@@ -332,12 +345,6 @@ h1:hover {
   }
 }
 
-.arrow a img {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-}
-
 .contact {
   display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -347,8 +354,7 @@ h1:hover {
 }
 
 .timeline {
-  padding: 20px;
-  margin-top: 120px;
+  margin-top: 1vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -390,6 +396,10 @@ h1:hover {
   .timeline {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .arrow {
+    display: none;
   }
 }
 
