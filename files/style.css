@@ -37,6 +37,10 @@ h1 {
   transition: 0.3s;
 }
 
+h1:hover {
+  cursor: default;
+}
+
 .intro {
   height: 99.9vh;
 }
