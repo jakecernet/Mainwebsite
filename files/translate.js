@@ -20,6 +20,13 @@ function changeToSlo() {
     document.getElementById("proj6").innerHTML = "Spletna stran za naš razred.";
     document.getElementById("cont-me").innerHTML = "Kontakt";
     document.getElementById("cont-me-h2").innerHTML = "Če me želite kontaktirati, lahko to storite tukaj.";
+    document.getElementById("timeline").innerHTML = "Časovnica";
+    document.getElementById("timeline-h2").innerHTML = "Tukaj je časovnica mojih dogodkov.";
+    document.getElementById("13").innerHTML = "Začel osnovno šolo.";
+    document.getElementById("20").innerHTML = "Začel svoje programersko potovanje.";
+    document.getElementById("22-1").innerHTML = "Začel srednjo šolo.";
+    document.getElementById("22-2").innerHTML = "Začel se aktivno učiti izdelave spletnih strani.";
+    document.getElementById("now").innerHTML = "Učenje izdelave spletnih strani, JavaScripta, batcha in C++.";
 }
 
 function changeToEng() {
@@ -41,6 +48,13 @@ function changeToEng() {
     document.getElementById("proj6").innerHTML = "A website for our class.";
     document.getElementById("cont-me").innerHTML = "Contact me";
     document.getElementById("cont-me-h2").innerHTML = "If you want to contact me, you can do it here.";
+    document.getElementById("timeline").innerHTML = "Timeline";
+    document.getElementById("timeline-h2").innerHTML = "Here is a timeline of my events.";
+    document.getElementById("13").innerHTML = "Started primary school.";
+    document.getElementById("20").innerHTML = "Started my coding journey.";
+    document.getElementById("22-1").innerHTML = "Started high school.";
+    document.getElementById("22-2").innerHTML = "Started actively learning web development.";
+    document.getElementById("now").innerHTML = "Learning web development, JavaScript, batch and C++.";
 }
 
 function translatePage(selectedLanguage) {
