@@ -40,8 +40,8 @@ h1:hover {
   color: rgb(144, 156, 255);
 }
 
-.intro {
-  height: 99.9vh;
+header {
+  height: 110vh;
 }
 
 .o-Nas {
@@ -221,6 +221,16 @@ nav {
 
   .navbar-link {
     display: none;
+    background-color: #464f77d0;
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    border-radius: 10px;
   }
 
   .navbar-link ul {
@@ -238,10 +248,6 @@ nav {
   .logoDiv {
     margin: 1em 1em 1em 1em;
   }
-}
-
-#about-text{
-  /*margin-top: 50px;*/
 }
 
 #us {

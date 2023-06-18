@@ -14,11 +14,19 @@ window.addEventListener("resize", function () {
 function menuShow() {
     if (menu.style.display == "none") {
         menu.style.display = "block";
-        title.style.marginTop = "80px";
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos || prevScrollpos == currentScrollPos) {
+                document.getElementById("navbar-link").style.display = "none";
+            } else {
+                document.getElementById("navbar-link").style.display = "none";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     }
     else {
         menu.style.display = "none";
-        title.style.marginTop = "0px";
     }
 }
 
@@ -56,3 +64,15 @@ window.addEventListener('scroll', function () {
         scrollToTop.style.display = 'none';
     }
 });
+
+//hide the navbar buttons when scrolling or clicking
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos || prevScrollpos == currentScrollPos) {
+        document.getElementById("navbar-link").style.display = "block";
+    } else {
+        document.getElementById("navbar-link").style.display = "none";
+    }
+    prevScrollpos = currentScrollPos;
+}
