@@ -63,12 +63,12 @@ h1:hover {
 }
 
 .logoDiv {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
-  float: left;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 1em 3em 1em 1em;
 }
 
 .logoDiv a img {
@@ -83,13 +83,21 @@ h1:hover {
   scale: 1.1;
 }
 
-.navBar {
+nav {
   display: flex;
   align-items: center;
-  float: right;
+  justify-content: space-between;
+}
+
+.navbar-link {
   margin-right: 20px;
-  margin-top: 45px;
-  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
 }
 
 .navbar-link ul {
@@ -201,64 +209,39 @@ h1:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .navbar-link {
-    display: none;
-    width: 100%;
+  .menu {
+    display: flex;
+    margin: 1em 1em 1em 1em;
   }
 
-  .navbar-link ul {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar-link ul li {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logoDiv {
-    margin-top: -140px;
-    margin-left: 50px;
-    float: left;
-  }
-
-  .logoDiv a img {
+  .menu img{
     width: 80px;
     height: 80px;
   }
 
-  .menu {
-    display: flex;
-    margin-top: -130px;
-    margin-right: 60px;
-    float: right;
+  .navbar-link {
+    display: none;
   }
 
-  .menu img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .menu img:hover {
-    scale: 1.1;
-  }
-
-  .navBar {
-    float: none;
-    margin-top: 160px;
-    margin-right: 0;
+  .navbar-link ul {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    place-items: center;
+    padding: 4em 0;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
   }
 
-  .o-Nas {
-    margin-top: -60px;
+  .logoDiv {
+    margin: 1em 1em 1em 1em;
   }
+}
+
+#about-text{
+  /*margin-top: 50px;*/
 }
 
 #us {

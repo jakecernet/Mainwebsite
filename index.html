@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Hi! I'm a front-end learning Vegovec and this is my website.">
@@ -21,22 +20,18 @@
 </head>
 
 <body>
+    <p id="top" style="opacity: 0; margin-top: -40px;">.</p>
     <div class="intro">
-        <div class="logoDiv">
-            <a href="https://jakecer.tk" title="Jaka Černetič">
-                <img src="img/logo.png" class="logo" alt="Logo" id="top">
-            </a>
-        </div>
-        <div class="menu">
-            <a onclick="menuShow()">
-                <img src="img/menu.png" alt="Show the menu." class="menu-img">
-            </a>
-        </div>
-        <div class="navBar">
+        <nav>
+            <div class="logoDiv">
+                <a href="https://jakecer.tk" title="Jaka Černetič">
+                    <img src="img/logo.png" alt="Logo" id="logo">
+                </a>
+            </div>
             <div class="navbar-link" id="navbar-link">
                 <ul>
-                    <li><a id="about" href="#timeline" title="About me">Timeline</a></li>
-                    <li><a id="kont" href="#cont" title="My contacs">Links</a></li>
+                    <li><a id="about" href="#timeline" title="Timeline">Timeline</a></li>
+                    <li><a id="kont" href="#cont" title="My links">Links</a></li>
                     <li><a id="file" href="#project" title="My projects.">Projects</a></li>
                     <li><a id="contact" href="#cont-me" title="Contact me">Contact me</a></li>
                     <li>
@@ -47,14 +42,19 @@
                     </li>
                 </ul>
             </div>
-        </div>
+            <div class="menu">
+                <a onclick="menuShow()">
+                    <img src="img/menu.png" alt="Show the menu." class="menu-img">
+                </a>
+            </div>
+        </nav>
         <div>
-            <span>‎</span>
+            <span id="margin">‎</span>
         </div>
         <div class="inside">
             <div class="o-Nas">
                 <div class="text">
-                    <h1 style="margin-top: 200px;" id="about-text"></h1>
+                    <h1 id="about-text"></h1>
                     <h1 id="us">
                         Hi! I'm Jaka Černetič.
                     </h1>

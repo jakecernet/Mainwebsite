@@ -1,4 +1,5 @@
 var menu = document.getElementById("navbar-link");
+var title = document.getElementById("about-text");
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
@@ -13,9 +14,11 @@ window.addEventListener("resize", function () {
 function menuShow() {
     if (menu.style.display == "none") {
         menu.style.display = "block";
+        title.style.marginTop = "80px";
     }
     else {
         menu.style.display = "none";
+        title.style.marginTop = "0px";
     }
 }
 
