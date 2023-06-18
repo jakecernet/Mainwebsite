@@ -214,7 +214,7 @@ nav {
     margin: 1em 1em 1em 1em;
   }
 
-  .menu img{
+  .menu img {
     width: 80px;
     height: 80px;
   }
@@ -384,6 +384,35 @@ nav {
   list-style: none;
 }
 
+.contact li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.contact li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  margin-left: -11%;
+  transform: scaleX(0);
+  height: 10px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.contact li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .contact-item {
   display: grid;
   place-items: center;
@@ -391,15 +420,7 @@ nav {
   height: 120px;
   border-radius: 8px;
   margin-left: -38px;
-}
-
-.contact-item:hover {
-  background-color: rgb(24, 27, 43);
-  transition: 0.3s;
-  box-shadow: 10px 10px 20px #000000b4;
-  opacity: 0.9;
-  filter: grayscale(0.5);
-  scale: 1.1;
+  filter: grayscale(1);
 }
 
 .top {
