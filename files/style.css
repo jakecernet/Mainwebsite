@@ -36,7 +36,6 @@ h1 {
 }
 
 h1:hover {
-  cursor: default;
   color: rgb(144, 156, 255);
 }
 
@@ -207,6 +206,70 @@ nav {
   cursor: pointer;
 }
 
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  text-align: center;
+  transition: 0.3s;
+  background:rgb(24, 27, 43);
+  opacity: 1;
+  margin-top: 100px;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.mobile-nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+}
+
+.mobile-nav ul li {
+  margin: 0.5rem 0;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  z-index: 9999;  
+}
+
+.mobile-nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  margin-left: -11%;
+  transform: scaleX(0);
+  height: 5px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.mobile-nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mobile-nav ul li a:hover {
+  color: rgb(144, 156, 255);
+  text-shadow: 2px 4px 4px #747474;
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: flex;
@@ -220,28 +283,6 @@ nav {
 
   .navbar-link {
     display: none;
-    background-color: #464f77d0;
-    width: 100%;
-    height: 120%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 10;
-    border-radius: 10px;
-  }
-
-  .navbar-link ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4em 0;
-    position: absolute;
-    top: 5em;
-    left: 0;
-    width: 100%;
-    z-index: 1;
   }
 
   .logoDiv {
@@ -274,7 +315,6 @@ nav {
   color: rgb(144, 156, 255);
   text-shadow: 2px 4px 4px #747474;
   transition: 0.3s;
-  margin-top: 5px;
 }
 
 #us-h2{

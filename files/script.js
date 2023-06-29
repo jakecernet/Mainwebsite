@@ -1,4 +1,4 @@
-var menu = document.getElementById("navbar-link");
+var menu = document.getElementById("mobile-nav");
 var title = document.getElementById("about-text");
 
 window.addEventListener("resize", function () {
@@ -14,20 +14,19 @@ window.addEventListener("resize", function () {
 function menuShow() {
     if (menu.style.display == "none") {
         menu.style.display = "block";
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos || prevScrollpos == currentScrollPos) {
-                document.getElementById("navbar-link").style.display = "none";
-            } else {
-                document.getElementById("navbar-link").style.display = "none";
-            }
-            prevScrollpos = currentScrollPos;
+        setTimeout(function () {
+            menu.style.width = "100%";
         }
+            , 30);
     }
     else {
-        menu.style.display = "none";
+        menu.style.width = "0";
+        setTimeout(function () {
+            menu.style.display = "none";
+        }
+            , 300);
     }
+
 }
 
 function jakecer() {
@@ -64,15 +63,3 @@ window.addEventListener('scroll', function () {
         scrollToTop.style.display = 'none';
     }
 });
-
-//hide the navbar buttons when scrolling or clicking
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos || prevScrollpos == currentScrollPos) {
-        document.getElementById("navbar-link").style.display = "block";
-    } else {
-        document.getElementById("navbar-link").style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
-}
