@@ -18,7 +18,11 @@ body {
   width: 100%;
   font-family: 'Poppins';
   overflow-x: hidden;
-  background-image: linear-gradient(160deg, rgb(35, 40, 62) 5%, rgb(26, 29, 44) 100%);
+  /*background-image: linear-gradient(160deg, rgb(35, 40, 62) 5%, rgb(26, 29, 44) 100%);*/
+  background-image: url(../img/bkg.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body p {
@@ -655,7 +659,7 @@ footer a {
   align-items: center;
   margin: 100px;
   padding: 10px;
-  background-color: rgb(35, 40, 62);
+  background-color: rgba(35, 40, 62, 0.705);
   border-radius: 8px;
   box-shadow: 0 0 4px #000000;
   transition: 0.3s;
