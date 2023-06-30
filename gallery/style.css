@@ -7,7 +7,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f1f1f1;
-    background: linear-gradient(160deg, rgb(35, 40, 62) 5%, rgb(26, 29, 44) 100%);
+    background: url(../img/bkg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -22,27 +25,64 @@ h1 {
     padding: 0 20px;
 }
 
-.preview {
-    background-color: rgb(35, 40, 62);
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    border-radius: 2px;
-    text-decoration: none;
-    color: rgb(179, 196, 230);
-    transition: 0.3s;
-    margin-top: 20px;
-    box-shadow: 0 0 4px #000000;
-    height: 400px;
-}
-
-.preview:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #000000;
+.preview-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.preview img {
-    width: fit-content;
-    border-radius: 12px;
+.preview-grid img:hover {
+    transform: scale(1.05);
+    rotate: 2deg;
+}
+
+.preview-grid img:active {
+    transform: scale(0.95);
+    rotate: -2deg;
+}
+
+.preview{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.preview-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-weight: 900;
+}
+
+.preview-close:hover {
+    color: #535353;
+    font-weight: 900;
+}
+
+#preview-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -11,26 +11,13 @@
 <body>
     <h1>Gallery</h1>
     <div class="preview-grid">
-        <div class="preview" onclick="showImage('Jezero')">
-            <h1>Jezero</h1>
-            <img src="https://picsum.photos/300/260" alt="preview">
-        </div>
-        <div class="preview">
-            <h1>Planina</h1>
-            <img src="https://picsum.photos/300/260" alt="preview">
-        </div>
-        <div class="preview">
-            <h1>Reka</h1>
-            <img src="https://picsum.photos/300/260" alt="preview">
-        </div>
-        <div class="preview">
-            <h1>Planina</h1>
-            <img src="https://picsum.photos/300/260" alt="preview">
-        </div>
-        <div class="preview">
-            <h1>Reka</h1>
-            <img src="https://picsum.photos/300/260" alt="preview">
-        </div>
+        <img src="https://picsum.photos/300/260" alt="" onclick="showImage('1')">
+        <img src="https://picsum.photos/300/260" alt="">
+        <img src="https://picsum.photos/300/260" alt="">
+    </div>
+    <div class="preview" id="preview" onclick="closePreview()">
+        <img src="https://picsum.photos/3000/2600" alt="" id="preview-image">
+        <div class="preview-close" onclick="closePreview()">X</div>
     </div>
     <script src="gallery.js"></script>
 </body>
