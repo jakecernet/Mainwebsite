@@ -18,10 +18,10 @@ body {
   width: 100%;
   font-family: 'Poppins';
   overflow-x: hidden;
-  background-image: url(../img/stacked-waves-haikei.svg);
-  background-color: rgb(24, 27, 43);
-  background-size: cover;
+  background-image: url(../img/bkg.svg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body p {
