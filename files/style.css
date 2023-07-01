@@ -18,9 +18,8 @@ body {
   width: 100%;
   font-family: 'Poppins';
   overflow-x: hidden;
-  /*background-image: linear-gradient(160deg, rgb(35, 40, 62) 5%, rgb(26, 29, 44) 100%);*/
-  background-image: url(../img/bkg.svg);
-  background-attachment: fixed;
+  background-image: url(../img/stacked-waves-haikei.svg);
+  background-color: rgb(24, 27, 43);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -51,7 +50,7 @@ header {
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .text {
@@ -218,7 +217,7 @@ nav {
   width: 0%;
   text-align: center;
   transition: 0.3s;
-  background:rgb(24, 27, 43);
+  background: rgb(24, 27, 43);
   opacity: 1;
   margin-top: 100px;
   z-index: 9999;
@@ -245,7 +244,7 @@ nav {
   display: inline-block;
   position: relative;
   font-size: 1.2rem;
-  z-index: 9999;  
+  z-index: 9999;
 }
 
 .mobile-nav ul li a::after {
@@ -294,15 +293,15 @@ nav {
   }
 
   #us-h2 {
-    margin-top: 100vh;	
+    margin-top: 100vh;
   }
 
-  #us{
+  #us {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  #timeline{
+  #timeline {
     margin-top: 200px;
   }
 }
@@ -321,7 +320,7 @@ nav {
   transition: 0.3s;
 }
 
-#us-h2{
+#us-h2 {
   font-size: 2rem;
   line-height: 1.2;
   color: rgb(179, 196, 230);
