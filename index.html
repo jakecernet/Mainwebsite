@@ -33,14 +33,12 @@
                 </ul>
             </div>
             <div class="logoDiv">
-                <a href="https://jakecer.tk" title="Jaka Černetič">
-                    <img src="img/logo.png" alt="Logo" id="logo">
+                <a href="https://jakecer.tk">
+                    <img src="img/logo.png" alt="Logo">
                 </a>
             </div>
             <div class="menu">
-                <a onclick="menuShow()">
-                    <img src="img/menu.png" alt="Show the menu." class="menu-img">
-                </a>
+                <img src="img/menu.png" alt="Show the menu." onclick="menuShow()">
             </div>
             <div class="navbar-link" id="navbar-link">
                 <ul>
@@ -61,49 +59,47 @@
         <div>
             <span id="margin">‎</span>
         </div>
-        <div class="inside">
-            <div class="o-Nas">
-                <h1 id="us">
-                    Hi! I'm Jaka Černetič.
-                </h1>
-                <h2 id="us-h2">I'm a student in the first grade at
-                    <a href="https://www.vegova.si" class="vegova">Vegova</a>
-                    high school. I am currently learning web development, JavaScript, batch and C++.
-                </h2>
-            </div>
+        <div class="o-Nas">
+            <h1 id="us">
+                Hi! I'm Jaka Černetič.
+            </h1>
+            <h2 id="us-h2">I'm a student in the first grade at
+                <a href="https://www.vegova.si" class="vegova">Vegova</a>
+                high school. I am currently learning web development, JavaScript, batch and C++.
+            </h2>
         </div>
         <div class="arrow">
             <a href="#timeline">
-                <img src="img/arrow.png" alt="Go to contact." title="Go down.">
+                <img src="img/arrow.png" alt="Go to timeline." title="Go down.">
             </a>
         </div>
     </header>
-    <div class="timeline">
-        <h1 id="timeline">Timeline</h1>
-        <h3 id="timeline-h2">Here is a timeline of my events.</h3>
-        <div class="event">
-            <h3>2013</h3>
-            <p id="13">Started primary school.</p>
+    <div class="text">
+        <div class="timeline">
+            <h1 id="timeline">Timeline</h1>
+            <h3 id="timeline-h2">Here is a timeline of my events.</h3>
+            <div class="event">
+                <h3>2013</h3>
+                <p id="13">Started primary school.</p>
+            </div>
+            <div class="event">
+                <h3>2020</h3>
+                <p id="20">Started my coding journey.</p>
+            </div>
+            <div class="event">
+                <h3>2022</h3>
+                <p id="22-1">Started high school.</p>
+            </div>
+            <div class="event">
+                <h3>2022</h3>
+                <p id="22-2">Started actively learning web development.</p>
+            </div>
+            <div class="event">
+                <h3>Now</h3>
+                <p id="now">Learning web development, JavaScript, batch and C++.</p>
+            </div>
         </div>
-        <div class="event">
-            <h3>2020</h3>
-            <p id="20">Started my coding journey.</p>
-        </div>
-        <div class="event">
-            <h3>2022</h3>
-            <p id="22-1">Started high school.</p>
-        </div>
-        <div class="event">
-            <h3>2022</h3>
-            <p id="22-2">Started actively learning web development.</p>
-        </div>
-        <div class="event">
-            <h3>Now</h3>
-            <p id="now">Learning web development, JavaScript, batch and C++.</p>
-        </div>
-    </div>
-    <div class="skills">
-        <div class="text">
+        <div class="skills">
             <h1 id="skills-title">Skills</h1>
             <h3 id="skills-h2">Here are some of my skills.</h3>
             <div class="skills-grid">
@@ -147,15 +143,18 @@
                     <h3 id="batch">Batch</h3>
                 </div>
                 <div class="skills-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
-                        style="border-radius: 0;" alt="Windows" title="Windows">
-                    <h3 id="windows">Windows</h3>
+                    <img src="https://seeklogo.com/images/N/node-js-logo-F4F55CD2D0-seeklogo.com.png" alt="Node.js"
+                        title="Node.js">
+                    <h3 id="node">Node.js</h3>
+                </div>
+                <div class="skills-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                        alt="React" title="React">
+                    <h3 id="react">React</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="lokacija" style="margin-top: 30%;">
-        <div class="text">
+        <div style="margin-top: 30%;">
             <h1 id="cont">Links</h1>
             <h3 id="lok">Here are some of my social media links.</h3>
             <ul class="contact" style="margin-top: 100px;">
@@ -165,9 +164,7 @@
                 <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item"></a></li>
             </ul>
         </div>
-    </div>
-    <div class="project">
-        <div class="text">
+        <div class="project">
             <h1 style="margin-top: 200px;" id="projects-title">Projects</h1>
             <h3 id="proj">Here are some of projects I've worked on.</h3>
             <div class="project-grid">
@@ -203,20 +200,20 @@
                 </div>
             </div>
         </div>
+        <div class="form">
+            <h1 class="cont-me" id="cont-me">Contact me</h1>
+            <h3 class="cont-me" id="cont-me-h2">If you want to contact me, you can do it here.</h3>
+            <form action="https://formspree.io/f/xnqykpza" method="POST">
+                <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
+                <input type="email" name="email" placeholder="Email" class="form-item" required id="email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-item"
+                    required></textarea>
+                <input type="submit" value="Send" class="form-item" id="send">
+            </form>
+        </div>
     </div>
     <div class="top">
         <a href="#top"><img src="img/top.png" alt="Go to top." title="Go back to top."></a>
-    </div>
-    <div class="form">
-        <h1 class="cont-me" id="cont-me">Contact me</h1>
-        <h3 class="cont-me" id="cont-me-h2">If you want to contact me, you can do it here.</h3>
-        <form action="https://formspree.io/f/xnqykpza" method="POST">
-            <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
-            <input type="email" name="email" placeholder="Email" class="form-item" required id="email">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-item"
-                required></textarea>
-            <input type="submit" value="Send" class="form-item" id="send">
-        </form>
     </div>
     <footer>
         <a href="https://jakecer.tk">
