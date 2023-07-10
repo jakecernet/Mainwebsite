@@ -706,3 +706,23 @@ footer a {
     width: 100px;
   }
 }
+
+.timeline,
+.skills,
+.links,
+.project,
+.form {
+  position: relative;
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+  .timeline,
+  .skills,
+  .links,
+  .project,
+  .form {
+    opacity: 1;
+  }
+}
