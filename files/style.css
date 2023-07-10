@@ -14,10 +14,9 @@ body {
   width: 100%;
   font-family: 'Poppins';
   overflow-x: hidden;
-  background-image: url(../img/bkg.svg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/stacked-waves-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 h1 {
