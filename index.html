@@ -19,7 +19,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="load()">
+    <div class="loading" id="loading">
+        <div class="loading-text">
+            <h1>Loading...</h1>
+            <img src="img/buffer.webp" alt="">
+        </div>
+    </div>
     <p id="top" style="opacity: 0; margin-top: -40px;">.</p>
     <header>
         <nav>
