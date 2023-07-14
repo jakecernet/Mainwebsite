@@ -1,7 +1,19 @@
+:root {
+  --bkg: rgb(35, 40, 62);
+  --white: rgb(255, 255, 255);
+  --light-blue: rgb(179, 196, 230);
+  --background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/stacked-waves-haikei.svg);
+
+  --bkg-white: rgb(255, 255, 255);
+  --white-white: black;
+  --light-blue-white: rgb(121, 138, 214);
+  --background-white: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/stacked-waves-haikei\ \(1\).svg);
+}
+
 * {
   scroll-behavior: smooth;
   transition: ease 0.3s;
-  color: rgb(121, 138, 214);
+  color: var(--light-blue);
 }
 
 
@@ -14,14 +26,14 @@ body {
   width: 100%;
   font-family: 'Poppins';
   overflow-x: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/stacked-waves-haikei.svg);
+  background-image: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 h1 {
   text-align: center;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   margin-top: 0;
   margin-bottom: 90px;
   font-size: 2.5rem;
@@ -38,14 +50,14 @@ header {
 
 .o-Nas {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   font-size: 1.5rem;
   text-align: center;
 }
 
 .text {
   text-align: center;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   margin-bottom: 90px;
 }
 
@@ -66,11 +78,11 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 2px #000000;
+  box-shadow: 0 0 2px black;
 }
 
 .logoDiv a img:hover {
-  box-shadow: 10px 10px 10px #000000;
+  box-shadow: 10px 10px 10px black;
   scale: 1.1;
 }
 
@@ -103,7 +115,7 @@ nav {
 
 .navbar-link li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   padding: 1rem;
   display: inline-block;
   position: relative;
@@ -120,7 +132,7 @@ nav {
   border-radius: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -136,7 +148,7 @@ nav {
   border: none;
   cursor: pointer;
   background-color: #1d264e00;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   font-size: 1.2rem;
   height: 40px;
   width: 80px;
@@ -152,41 +164,40 @@ nav {
 }
 
 .dropdown:hover {
-  background-color: #1d264eb2;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   border-radius: 5px;
 }
 
 .dropdown-eng {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-eng:hover {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-eng:focus {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-eng:active {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-slo {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-slo:hover {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-slo:focus {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .dropdown-slo:active {
-  background-color: #23283e;
+  background-color: var(--bkg);
 }
 
 .menu {
@@ -226,7 +237,7 @@ nav {
 
 .mobile-nav ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   padding: 1rem;
   display: inline-block;
   position: relative;
@@ -244,7 +255,7 @@ nav {
   border-radius: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -295,7 +306,7 @@ nav {
 #us {
   font-size: 4rem;
   line-height: 1.2;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   justify-content: center;
   align-items: center;
 }
@@ -308,7 +319,7 @@ nav {
 #us-h2 {
   font-size: 2rem;
   line-height: 1.2;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   justify-content: center;
   align-items: center;
   margin: 40px;
@@ -394,7 +405,7 @@ nav {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 4px black;
   border-radius: 4px;
 }
 
@@ -421,14 +432,14 @@ nav {
 }
 
 .skills-item {
-  background-color: rgb(35, 40, 62);
+  background-color: var(--bkg);
   padding: 10px;
   font-size: 1.2em;
   border-radius: 2px;
   text-decoration: none;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   margin-top: 40px;
-  box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 4px black;
   width: 220px;
   height: 220px;
 }
@@ -438,7 +449,7 @@ nav {
   background-color: rgb(24, 27, 43);
   scale: 1.04;
   animation: forwards;
-  box-shadow: 10px 10px 20px #000000b4;
+  box-shadow: 10px 10px 20px blackb4;
 }
 
 .skills-item img {
@@ -478,7 +489,7 @@ nav {
 
 .contact li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   padding: 1rem;
   display: inline-block;
   position: relative;
@@ -495,7 +506,7 @@ nav {
   border-radius: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -543,14 +554,14 @@ nav {
 }
 
 .grid-item {
-  background-color: rgb(35, 40, 62);
+  background-color: var(--bkg);
   padding: 20px;
   font-size: 1.2em;
   border-radius: 2px;
   text-decoration: none;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   margin-top: 20px;
-  box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 4px black;
 }
 
 .grid-item:hover {
@@ -558,7 +569,7 @@ nav {
   background-color: rgb(24, 27, 43);
   scale: 1.04;
   animation: forwards;
-  box-shadow: 10px 10px 20px #000000b4;
+  box-shadow: 10px 10px 20px blackb4;
 }
 
 .grid-item img {
@@ -614,7 +625,7 @@ footer a {
 .vegova:hover {
   color: rgb(244, 245, 255);
   scale: 1.1;
-  text-shadow: 0 5px 5px #000000;
+  text-shadow: 0 5px 5px black;
 }
 
 .form {
@@ -626,12 +637,12 @@ footer a {
   padding: 10px;
   background-color: rgba(35, 40, 62, 0.705);
   border-radius: 8px;
-  box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 4px black;
 }
 
 .form h3 {
   margin-bottom: 20px;
-  color: rgb(179, 196, 230);
+  color: var(--light-blue);
   font-size: 1.5rem;
   text-shadow: 2px 4px 4px #747474;
 }
@@ -639,51 +650,51 @@ footer a {
 .form input {
   width: 300px;
   height: 40px;
-  border: 1px solid rgb(179, 196, 230);
+  border: 1px solid var(--light-blue);
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: rgb(35, 40, 62);
-  color: rgb(179, 196, 230);
+  background-color: var(--bkg);
+  color: var(--light-blue);
 }
 
 .form input:focus {
-  outline: 1px solid rgb(179, 196, 230);
+  outline: 1px solid var(--light-blue);
 }
 
 .form textarea {
   width: 300px;
   height: 100px;
-  border: 1px solid rgb(179, 196, 230);
+  border: 1px solid var(--light-blue);
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: rgb(35, 40, 62);
-  color: rgb(179, 196, 230);
+  background-color: var(--bkg);
+  color: var(--light-blue);
 }
 
 .form textarea:focus {
-  outline: 1px solid rgb(179, 196, 230);
+  outline: 1px solid var(--light-blue);
 }
 
 .form [type="submit"] {
   width: 300px;
   height: 40px;
-  border: 1px solid rgb(179, 196, 230);
+  border: 1px solid var(--light-blue);
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: rgb(35, 40, 62);
-  color: rgb(179, 196, 230);
+  background-color: var(--bkg);
+  color: var(--light-blue);
   cursor: pointer;
 }
 
 .form [type="submit"]:hover {
   background-color: rgb(24, 27, 43);
-  box-shadow: 10px 10px 20px #000000b4;
+  box-shadow: 10px 10px 20px blackb4;
   opacity: 0.9;
   filter: grayscale(0.5);
   scale: 1.1;
@@ -733,7 +744,7 @@ footer a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgb(35, 40, 62);
+  background: var(--bkg);
   z-index: 9999;
   display: grid;
   place-items: center;
