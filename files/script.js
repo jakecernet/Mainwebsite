@@ -127,3 +127,45 @@ function load() {
     var load = document.getElementById("loading");
     load.style.display = "none";
 }
+
+function switchTheme() {
+    const body = document.body;
+    const theme = localStorage.getItem("theme");
+    const switcher = document.getElementById("switch");
+    body.classList.add(theme);
+    if (theme == "dark") {
+        body.classList.remove("dark");
+        body.classList.add("light");
+        localStorage.setItem("theme", "light");
+        switcher.classList.remove("fa-sun");
+        switcher.classList.add("fa-moon");
+        localStorage.setItem("switch", "fa-moon");
+    }
+    else {
+        body.classList.remove("light");
+        body.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        switcher.classList.remove("fa-moon");
+        switcher.classList.add("fa-sun");
+        localStorage.setItem("switch", "fa-sun");
+    }
+}
+
+function checkTheme() {
+    const body = document.body;
+    const theme = localStorage.getItem("theme");
+    body.classList.remove("light");
+    body.classList.remove("dark");
+    body.classList.add(theme);
+    const switcher = document.getElementById("switch");
+    if (theme == "dark") {
+        switcher.classList.remove("fa-moon");
+        switcher.classList.add("fa-sun");
+    }
+    else {
+        switcher.classList.remove("fa-sun");
+        switcher.classList.add("fa-moon");
+    }
+}
+
+checkTheme();

@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="files/style.css">
     <link rel="icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="load()">
+<body onload="load()" class="light">
     <div class="loading" id="loading">
         <div class="loading-text">
             <h1>Loading...</h1>
@@ -53,6 +54,7 @@
                     <li><a id="kont" href="#cont" title="My links">Links</a></li>
                     <li><a id="file" href="#projects-title" title="My projects.">Projects</a></li>
                     <li><a id="contact" href="#cont-me" title="Contact me">Contact me</a></li>
+                    <li onclick="switchTheme()"><a id="switch" class="fas fa-moon"></a></li>
                     <li>
                         <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
                             <option value="eng" class="dropdown-eng">ENG</option>
