@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en_US, sl_SI">
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -20,11 +20,11 @@
     <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="load()" class="light">
+<body onload="load()" class="dark">
     <div class="loading" id="loading">
         <div class="loading-text">
             <h1>Loading...</h1>
-            <img src="img/buffer.webp" alt="">
+            <img src="img/buffer.webp" alt="loading">
         </div>
     </div>
     <p id="top" style="opacity: 0; margin-top: -40px;">.</p>
@@ -167,10 +167,10 @@
             <h1 id="cont">Links</h1>
             <h3 id="lok">Here are some of my social media links.</h3>
             <ul class="contact" style="margin-top: 100px;">
-                <li><a href="discord" target="_blank"><img src="img/discord.png" class="contact-item"></a></li>
-                <li><a href="git" target="_blank"><img src="img/git.png" class="contact-item"></a></li>
-                <li><a href="youtube" target="_blank"><img src="img/youtube.png" class="contact-item"></a></li>
-                <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item"></a></li>
+                <li><a href="discord" target="_blank"><img src="img/discord.png" class="contact-item" alt="discord"></a></li>
+                <li><a href="git" target="_blank"><img src="img/git.png" class="contact-item" alt="github"></a></li>
+                <li><a href="youtube" target="_blank"><img src="img/youtube.png" class="contact-item" alt="youtube"></a></li>
+                <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item" alt="mail"></a></li>
             </ul>
         </div>
         <div class="project">
@@ -214,7 +214,9 @@
             <h3 class="cont-me" id="cont-me-h2">If you want to contact me, you can do it here.</h3>
             <form action="https://formspree.io/f/xnqykpza" method="POST">
                 <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
+                <label for="name"></label>
                 <input type="email" name="email" placeholder="Email" class="form-item" required id="email">
+                <label for="email"></label>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-item"
                     required></textarea>
                 <input type="submit" value="Send" class="form-item" id="send">
