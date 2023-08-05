@@ -3,7 +3,6 @@ var selectedLanguage = languageSelect.value;
 
 function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
-    document.getElementById("kont").innerHTML = "Povezave";
     document.getElementById("file").innerHTML = "Projekti";
     document.getElementById("contact").innerHTML = "Kontakt";
     document.getElementById("us").innerHTML = "Oj! Sem Jaka Černetič.";
@@ -28,7 +27,6 @@ function changeToSlo() {
 
 function changeToEng() {
     document.getElementById("about").innerHTML = "About me";
-    document.getElementById("kont").innerHTML = "Links";
     document.getElementById("file").innerHTML = "Projects";
     document.getElementById("contact").innerHTML = "Contact me";
     document.getElementById("us").innerHTML = "Hi! I'm Jaka Černetič.";
