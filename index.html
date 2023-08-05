@@ -2,7 +2,9 @@
 <html lang="en_US, sl_SI">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Hi! I'm a front-end learning Vegovec and this is my website.">
     <meta property="og:type" content="website">
@@ -34,7 +36,6 @@
                 <ul>
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#skills-title">Skills</a></li>
-                    <li><a href="#cont">Links</a></li>
                     <li><a href="#projects-title">Projects</a></li>
                     <li><a href="#cont-me">Contact me</a></li>
                     <li onclick="switchTheme()"><a id="switch" class="fas fa-moon"></a></li>
@@ -52,7 +53,6 @@
                 <ul>
                     <li><a id="about" href="#timeline" title="Timeline">Timeline</a></li>
                     <li><a id="skills" href="#skills-title" title="Skills">Skills</a></li>
-                    <li><a id="kont" href="#cont" title="My links">Links</a></li>
                     <li><a id="file" href="#projects-title" title="My projects.">Projects</a></li>
                     <li><a id="contact" href="#cont-me" title="Contact me">Contact me</a></li>
                     <li onclick="switchTheme()"><a id="switch" class="fas fa-moon"></a></li>
@@ -72,10 +72,9 @@
             <h1 id="us">
                 Hi! I'm Jaka Černetič.
             </h1>
-            <h2 id="us-h2">I'm a student in the first grade at
-                <a href="https://www.vegova.si" class="vegova">Vegova</a>
-                high school. I am currently learning web development, JavaScript, batch and C++.
-            </h2>
+            <h1 class="us_text">
+                Student, web developer, computer enthusiast
+            </h1>
         </div>
         <div class="arrow">
             <a href="#timeline">
@@ -84,9 +83,14 @@
         </div>
     </header>
     <div class="text">
+        <div class="about">
+            <h2 id="us-h2">I'm a student in the first grade at
+                <a href="https://www.vegova.si" class="vegova">Vegova</a>
+                high school. I am currently learning web development, JavaScript, batch and C++.
+            </h2>
+        </div>
         <div class="timeline">
             <h1 id="timeline">Timeline</h1>
-            <h3 id="timeline-h2">Here is a timeline of my events.</h3>
             <div class="event">
                 <h3>2013</h3>
                 <p id="13">Started primary school.</p>
@@ -110,108 +114,112 @@
         </div>
         <div class="skills">
             <h1 id="skills-title">Skills</h1>
-            <h3 id="skills-h2">Here are some of my skills.</h3>
-            <div class="skills-grid">
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" alt="HTML"
-                        title="HTML">
-                    <h3 id="html">HTML</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg"
-                        alt="CSS" title="CSS">
-                    <h3 id="css">CSS</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg"
-                        alt="JavaScript" title="JavaScript">
-                    <h3 id="js">JavaScript</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/arduino/arduino-original.svg"
-                        alt="Arduino" title="Arduino">
-                    <h3 id="arduino">Arduino</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/github/github-original.svg"
-                        alt="GitHub" title="GitHub">
-                    <h3 id="github">GitHub</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/vscode/vscode-original.svg"
-                        alt="VSCode" title="VSCode">
-                    <h3 id="vscode">Visual Studio Code</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" title="Git">
-                    <h3 id="git">Git</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://images.freeimages.com/fic/images/icons/575/pleasant/256/ms_dos_batch_file.png"
-                        alt="Batch" title="Batch">
-                    <h3 id="batch">Batch</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://seeklogo.com/images/N/node-js-logo-F4F55CD2D0-seeklogo.com.png" alt="Node.js"
-                        title="Node.js">
-                    <h3 id="node">Node.js</h3>
-                </div>
-                <div class="skills-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-                        alt="React" title="React">
-                    <h3 id="react">React</h3>
-                </div>
-            </div>
-        </div>
-        <div style="margin-top: 10%;" class="links">
-            <h1 id="cont">Links</h1>
-            <h3 id="lok">Here are some of my social media links.</h3>
-            <ul class="contact" style="margin-top: 100px;">
-                <li><a href="discord" target="_blank"><img src="img/discord.png" class="contact-item" alt="discord"></a></li>
-                <li><a href="git" target="_blank"><img src="img/git.png" class="contact-item" alt="github"></a></li>
-                <li><a href="youtube" target="_blank"><img src="img/youtube.png" class="contact-item" alt="youtube"></a></li>
-                <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item" alt="mail"></a></li>
+            <ul class="skills-grid">
+                <li class="skills-item">
+                    <h3>HTML</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>CSS</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>React</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>NodeJS</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>Git</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>Visual Studio Code</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>Batch</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>Arduino C++</h3>
+                </li>
+                <li class="skills-item">
+                    <h3>Github</h3>
+                </li>
             </ul>
         </div>
         <div class="project">
             <h1 style="margin-top: 200px;" id="projects-title">Projects</h1>
             <h3 id="proj">Here are some of projects I've worked on.</h3>
             <div class="project-grid">
-                <div class="grid-item" onclick="jakecer()">
+                <div class="grid-item">
                     <h1>jakecer.tk</h1>
-                    <img src="img/logo.png" alt="jakecer.tk">
                     <h3 id="proj1">My personal website.</h3>
+                    <a href="https://github.com/jakecernet/MainWebsite" target="_blank"><img src="img/git.png" alt=""
+                            class="image"></a>
+                    <a href="https://jakecer.tk" target="_blank">
+                        <img src="https://img.freepik.com/free-icon/internet_318-922355.jpg?w=2000" alt=""
+                            class="image">
+                    </a>
                 </div>
-                <div class="grid-item" onclick="kroky()">
+                <div class="grid-item">
                     <h1>KrokyPlus</h1>
-                    <img src="https://krokyplus.me/files/other/icon.png" alt="KrokyPlus">
                     <h3 id="proj2">Food ordering service improvment.</h3>
+                    <a href="https://github.com/jakecernet/KrokyPlus" target="_blank"><img src="img/git.png" alt=""
+                            class="image"></a>
+                    <a href="https://krokyplus.me" target="_blank">
+                        <img src="https://img.freepik.com/free-icon/internet_318-922355.jpg?w=2000" alt=""
+                            class="image">
+                    </a>
                 </div>
-                <div class="grid-item" onclick="jsgames()">
+                <div class="grid-item">
                     <h1>JSGames</h1>
-                    <img src="https://jsgames.tech/files/logo.png" alt="jsgames.tech">
                     <h3 id="proj3">Website with my JavaScript games.</h3>
+                    <a href="https://github.com/jakecernet/JSGames" target="_blank"><img src="img/git.png" alt=""
+                            class="image"></a>
+                    <a href="https://jsgames.tech" target="_blank">
+                        <img src="https://img.freepik.com/free-icon/internet_318-922355.jpg?w=2000" alt=""
+                            class="image">
+                    </a>
                 </div>
-                <div class="grid-item" onclick="download()">
+                <div class="grid-item">
                     <h1>YT Downloader</h1>
-                    <img src="img/logo.png" alt="jakecer.tk">
                     <h3 id="proj4">YouTube to MP3 converter, made in Python.</h3>
+                    <a href="https://github.com/jakecernet/YT_Downloader" target="_blank"><img src="img/git.png" alt=""
+                            class="image"></a>
                 </div>
-                <div class="grid-item" onclick="notes()">
+                <div class="grid-item">
                     <h1>Notes</h1>
-                    <img src="https://jakecernet.github.io/Notes/icon.png" alt="jakecer.tk">
                     <h3 id="proj5">Simple notes taking website.</h3>
+                    <a href="https://github.com/jakecernet/Notes" target="_blank"><img src="img/git.png" alt=""
+                            class="image"></a>
+                    <a href="https://jakecernet.github.io/Notes" target="_blank">
+                        <img src="https://img.freepik.com/free-icon/internet_318-922355.jpg?w=2000" alt=""
+                            class="image">
+                    </a>
                 </div>
-                <div class="grid-item" onclick="spaces()">
-                    <h1>spaces.tk</h1>
-                    <img src="https://spaces.tk/ikona.ico" alt="jakecer.tk">
+                <div class="grid-item">
+                    <h1>Spaces.tk</h1>
                     <h3 id="proj6">A website for our class.</h3>
+                    <a href="https://github.com/lin-cadez/lin-cadez.github.io" target="_blank"><img src="img/git.png"
+                            alt="" class="image"></a>
+                    <a href="https://spaces.tk" target="_blank">
+                        <img src="https://img.freepik.com/free-icon/internet_318-922355.jpg?w=2000" alt=""
+                            class="image">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="form">
             <h1 class="cont-me" id="cont-me">Contact me</h1>
             <h3 class="cont-me" id="cont-me-h2">If you want to contact me, you can do it here.</h3>
+            <ul class="contact" style="margin-top: 100px;">
+                <li><a href="discord" target="_blank"><img src="img/discord.png" class="contact-item" alt="discord"></a>
+                </li>
+                <li><a href="git" target="_blank"><img src="img/git.png" class="contact-item" alt="github"></a></li>
+                <li><a href="youtube" target="_blank"><img src="img/youtube.png" class="contact-item" alt="youtube"></a>
+                </li>
+                <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item" alt="mail"></a></li>
+            </ul>
             <form action="https://formspree.io/f/xnqykpza" method="POST">
                 <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
                 <label for="name"></label>

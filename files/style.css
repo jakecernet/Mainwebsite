@@ -37,12 +37,7 @@ h1 {
   text-align: center;
   color: var(--light-blue);
   margin-top: 0;
-  margin-bottom: 90px;
   font-size: 2.5rem;
-}
-
-h1:hover {
-  color: rgb(144, 156, 255);
 }
 
 header {
@@ -308,13 +303,8 @@ nav {
   font-size: 4rem;
   line-height: 1.2;
   color: var(--light-blue);
-  justify-content: center;
-  align-items: center;
-}
-
-#us:hover {
-  color: rgb(144, 156, 255);
-  text-shadow: 2px 4px 4px #747474;
+  display: grid;
+  place-items: center;
 }
 
 #us-h2 {
@@ -426,23 +416,25 @@ nav {
 }
 
 .skills-grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(5, 1fr);
+  max-width: 840px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
 .skills-item {
   background-color: var(--bkg);
-  padding: 10px;
+  padding: 15px;
   font-size: 1.2em;
   border-radius: 2px;
   text-decoration: none;
   color: var(--light-blue);
-  margin-top: 40px;
+  margin: 10px;
   box-shadow: 0 0 4px black;
-  width: 220px;
-  height: 220px;
 }
 
 .skills-item:hover {
@@ -450,12 +442,6 @@ nav {
   scale: 1.04;
   animation: forwards;
   box-shadow: 10px 10px 20px blackb4;
-}
-
-.skills-item img {
-  width: 120px;
-  border-radius: 12px;
-  margin-top: 10px;
 }
 
 .skills-item h3 {
@@ -473,11 +459,6 @@ nav {
     margin-left: 20px;
     margin-right: 20px;
   }
-}
-
-#cont {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .contact {
@@ -520,10 +501,10 @@ nav {
   display: grid;
   place-items: center;
   padding: 10px;
-  height: 120px;
+  height: 80px;
   border-radius: 8px;
   margin-left: -38px;
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 
 .top {
@@ -561,24 +542,29 @@ nav {
   text-decoration: none;
   color: var(--light-blue);
   margin-top: 20px;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 10px black;
 }
 
 .grid-item:hover {
-  cursor: pointer;
   scale: 1.04;
   animation: forwards;
-  box-shadow: 10px 10px 20px blackb4;
+  box-shadow: 10px 10px 20px black;
 }
 
-.grid-item img {
-  width: 120px;
-  border-radius: 12px;
+.grid-item h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .grid-item h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.image{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -719,7 +705,6 @@ footer a {
 
 .timeline,
 .skills,
-.links,
 .project,
 .form {
   position: relative;
@@ -730,7 +715,6 @@ footer a {
 
   .timeline,
   .skills,
-  .links,
   .project,
   .form {
     opacity: 1;

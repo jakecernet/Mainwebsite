@@ -29,30 +29,6 @@ function menuShow() {
 
 }
 
-function jakecer() {
-    window.open("https://jakecer.tk", "_blank");
-}
-
-function kroky() {
-    window.open("https://krokyplus.me", "_blank");
-}
-
-function jsgames() {
-    window.open("https://jsgames.tech", "_blank");
-}
-
-function download() {
-    window.open("https://github.com/jakecernet/YT_Downloader", "_blank")
-}
-
-function notes() {
-    window.open("https://jakecernet.github.io/Notes/", "_blank")
-}
-
-function spaces() {
-    window.open("https://spaces.tk", "_blank")
-}
-
 window.addEventListener('scroll', function () {
     var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -67,7 +43,6 @@ window.addEventListener('scroll', function () {
 // Get the divs
 const timelineDiv = document.querySelector('.timeline');
 const skillsDiv = document.querySelector('.skills');
-const linksDiv = document.querySelector('.links');
 const projectDiv = document.querySelector('.project');
 const formDiv = document.querySelector('.form');
 
@@ -82,21 +57,18 @@ window.addEventListener('scroll', () => {
     // Calculate the opacity for each div based on its position relative to the viewport
     const timelineOpacity = calculateOpacity(timelineDiv.offsetTop, viewportHeight, scrollPosition);
     const skillsOpacity = calculateOpacity(skillsDiv.offsetTop, viewportHeight, scrollPosition);
-    const linksOpacity = calculateOpacity(linksDiv.offsetTop, viewportHeight, scrollPosition);
     const projectOpacity = calculateOpacity(projectDiv.offsetTop, viewportHeight, scrollPosition);
     const formOpacity = calculateOpacity(formDiv.offsetTop, viewportHeight, scrollPosition);
 
     // Apply the opacity to each div
     timelineDiv.style.opacity = timelineOpacity;
     skillsDiv.style.opacity = skillsOpacity;
-    linksDiv.style.opacity = linksOpacity;
     projectDiv.style.opacity = projectOpacity;
     formDiv.style.opacity = formOpacity;
 
     // Apply a blur filter to each div based on its opacity
     timelineDiv.style.filter = `blur(${timelineOpacity * -8}px)`;
     skillsDiv.style.filter = `blur(${skillsOpacity * -8}px)`;
-    linksDiv.style.filter = `blur(${linksOpacity * -8}px)`;
     projectDiv.style.filter = `blur(${projectOpacity * -8}px)`;
     formDiv.style.filter = `blur(${formOpacity * -8}px)`;
 
@@ -104,7 +76,6 @@ window.addEventListener('scroll', () => {
     if (window.innerWidth < 768) {
         timelineDiv.style.opacity = 1;
         skillsDiv.style.opacity = 1;
-        linksDiv.style.opacity = 1;
         projectDiv.style.opacity = 1;
         formDiv.style.opacity = 1;
     }

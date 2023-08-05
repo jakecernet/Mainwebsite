@@ -5,11 +5,9 @@ function changeToSlo() {
     document.getElementById("about").innerHTML = "O meni";
     document.getElementById("kont").innerHTML = "Povezave";
     document.getElementById("file").innerHTML = "Projekti";
-    document.getElementById("cont").innerHTML = "Povezave";
     document.getElementById("contact").innerHTML = "Kontakt";
     document.getElementById("us").innerHTML = "Oj! Sem Jaka Černetič.";
     document.getElementById("us-h2").innerHTML = "Sem dijak prvega letnika Vegove gimnazije. Trenutno se učim izdelavo spletnih strani, JavaScript, batch in C++.";
-    document.getElementById("lok").innerHTML = "Tukaj so povezave za moja socialna omrežja.";
     document.getElementById("projects-title").innerHTML = "Projekti";
     document.getElementById("proj").innerHTML = "Tukaj so nekateri moji projekti.";
     document.getElementById("proj1").innerHTML = "Moja osebna spletna stran.";
@@ -21,7 +19,6 @@ function changeToSlo() {
     document.getElementById("cont-me").innerHTML = "Kontakt";
     document.getElementById("cont-me-h2").innerHTML = "Če me želite kontaktirati, lahko to storite tukaj.";
     document.getElementById("timeline").innerHTML = "Časovnica";
-    document.getElementById("timeline-h2").innerHTML = "Tukaj je časovnica mojih dogodkov.";
     document.getElementById("13").innerHTML = "Začel osnovno šolo.";
     document.getElementById("20").innerHTML = "Začel svoje programersko potovanje.";
     document.getElementById("22-1").innerHTML = "Začel srednjo šolo.";
@@ -33,11 +30,9 @@ function changeToEng() {
     document.getElementById("about").innerHTML = "About me";
     document.getElementById("kont").innerHTML = "Links";
     document.getElementById("file").innerHTML = "Projects";
-    document.getElementById("cont").innerHTML = "Links";
     document.getElementById("contact").innerHTML = "Contact me";
     document.getElementById("us").innerHTML = "Hi! I'm Jaka Černetič.";
     document.getElementById("us-h2").innerHTML = "I'm a student in the first grade at Vegova high school. I am currently learning web development, JavaScript, batch and C++.";
-    document.getElementById("lok").innerHTML = "Here are some of my social media links.";
     document.getElementById("projects-title").innerHTML = "Projects";
     document.getElementById("proj").innerHTML = "Here are some of my projects.";
     document.getElementById("proj1").innerHTML = "My personal website.";
@@ -49,7 +44,6 @@ function changeToEng() {
     document.getElementById("cont-me").innerHTML = "Contact me";
     document.getElementById("cont-me-h2").innerHTML = "If you want to contact me, you can do it here.";
     document.getElementById("timeline").innerHTML = "Timeline";
-    document.getElementById("timeline-h2").innerHTML = "Here is a timeline of my events.";
     document.getElementById("13").innerHTML = "Started primary school.";
     document.getElementById("20").innerHTML = "Started my coding journey.";
     document.getElementById("22-1").innerHTML = "Started high school.";
