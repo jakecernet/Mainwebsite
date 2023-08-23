@@ -2,14 +2,14 @@
   --bkg: rgb(35, 40, 62);
   --white: rgb(255, 255, 255);
   --light-blue: rgb(179, 196, 230);
-  --background: linear-gradient(rgba(0, 0, 0), 85%,rgba(0, 0, 0, 0));
+  --background: linear-gradient(rgb(14, 16, 27), 85%, rgb(179, 196, 230));
 }
 
 .light {
   --bkg: rgb(255, 255, 255);
-  --white: black;
+  --white: rgb(35, 40, 62);
   --light-blue: rgb(33, 33, 34);
-  --background: linear-gradient(rgba(255, 255, 255, 0.897), rgba(0, 0, 0, 0)), url(../img/bkg-light.svg);
+  --background: linear-gradient(rgb(179, 196, 230), 85%, rgba(0, 0, 0));
 }
 
 * {
@@ -354,7 +354,7 @@ nav {
   box-shadow: 0 0 4px black;
 }
 
-.skills-grid li:hover{
+.skills-grid li:hover {
   cursor: pointer;
   scale: 1.04;
   box-shadow: 10px 10px 20px black;
