@@ -76,6 +76,7 @@ header {
 .text {
   color: var(--light-blue);
   font-size: 1rem;
+  padding: 15px;
 }
 
 .text h3 {
@@ -339,6 +340,7 @@ nav {
   justify-content: center;
   align-items: center;
   list-style: none;
+  padding: 0;
 }
 
 .skills-item {
@@ -360,12 +362,6 @@ nav {
 .skills-item h3 {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .skills-item {
-    margin-left: 0;
-  }
 }
 
 .top {
