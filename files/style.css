@@ -2,7 +2,7 @@
   --bkg: rgb(35, 40, 62);
   --white: rgb(255, 255, 255);
   --light-blue: rgb(179, 196, 230);
-  --background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/bkg-dark.svg);
+  --background: linear-gradient(rgba(0, 0, 0), 85%,rgba(0, 0, 0, 0));
 }
 
 .light {
@@ -31,6 +31,7 @@ body {
   background-image: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -343,9 +344,9 @@ nav {
   padding: 0;
 }
 
-.skills-item {
+.skills-grid li {
   background-color: var(--bkg);
-  padding: 15px;
+  padding: 20px;
   font-size: 1.2em;
   border-radius: 2px;
   color: var(--light-blue);
@@ -353,15 +354,10 @@ nav {
   box-shadow: 0 0 4px black;
 }
 
-.skills-item:hover {
+.skills-grid li:hover{
   cursor: pointer;
   scale: 1.04;
-  box-shadow: 10px 10px 20px blackb4;
-}
-
-.skills-item h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  box-shadow: 10px 10px 20px black;
 }
 
 .top {
@@ -580,7 +576,7 @@ form [type="submit"]:hover {
   cursor: pointer;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -603,8 +599,7 @@ form{
   }
 }
 
-.about
-.timeline,
+.about .timeline,
 .skills,
 .project,
 .form {
@@ -613,8 +608,8 @@ form{
 }
 
 @media screen and (max-width: 800px) {
-  .about
-  .timeline,
+
+  .about .timeline,
   .skills,
   .project,
   .form {
