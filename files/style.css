@@ -2,7 +2,7 @@
   --bkg: rgb(35, 40, 62);
   --white: rgb(255, 255, 255);
   --light-blue: rgb(179, 196, 230);
-  --background: linear-gradient(rgb(14, 16, 27), 85%, rgb(179, 196, 230));
+  --background: linear-gradient(rgb(14, 16, 27), 90%, rgb(179, 196, 230));
 }
 
 .light {
@@ -86,7 +86,7 @@ header {
 
 .element {
   position: relative;
-  margin-top: 40vh;
+  margin-top: 80vh;
 }
 
 .logoDiv {
@@ -332,7 +332,7 @@ nav {
   margin-top: 50vh;
 }
 
-.skills-grid {
+.skills ul {
   max-width: 840px;
   width: 95%;
   margin: 0 auto;
@@ -344,7 +344,7 @@ nav {
   padding: 0;
 }
 
-.skills-grid li {
+.skills ul li {
   background-color: var(--bkg);
   padding: 20px;
   font-size: 1.2em;
@@ -354,7 +354,7 @@ nav {
   box-shadow: 0 0 4px black;
 }
 
-.skills-grid li:hover {
+.skills ul li:hover {
   cursor: pointer;
   scale: 1.04;
   box-shadow: 10px 10px 20px black;
