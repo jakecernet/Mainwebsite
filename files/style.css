@@ -87,7 +87,7 @@ header {
 
 .element {
   position: relative;
-  margin-top: 80vh;
+  margin-top: 50vh;
 }
 
 .logoDiv {
@@ -99,8 +99,7 @@ header {
 }
 
 .logoDiv a img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
   border-radius: 50%;
   box-shadow: 0 0 2px black;
 }
@@ -168,7 +167,7 @@ nav {
 
 .menu {
   display: none;
-  width: 50px;
+  width: 10px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -217,8 +216,8 @@ nav {
   }
 
   .menu img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .navbar-link {
@@ -300,13 +299,11 @@ nav {
 }
 
 .timeline {
-  margin-top: 1vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: -240px;
 }
 
 .event {
@@ -321,7 +318,7 @@ nav {
 }
 
 .skills {
-  margin-top: 100vh;
+  margin-top: 50vh;
 }
 
 .skills ul {
@@ -591,13 +588,13 @@ form {
   }
 }
 
-.timeline,
+/*.timeline,
 .skills,
 .project,
 .form {
   position: relative;
   opacity: 0;
-}
+}*/
 
 @media screen and (max-width: 800px) {
 

@@ -39,7 +39,7 @@ window.addEventListener('scroll', function () {
         scrollToTop.style.display = 'none';
     }
 });
-
+/*
 // Get the divs
 const timelineDiv = document.querySelector('.timeline');
 const skillsDiv = document.querySelector('.skills');
@@ -92,11 +92,10 @@ function calculateOpacity(divOffsetTop, viewportHeight, scrollPosition) {
 
     const opacity = (bottomInView - divOffsetTop) / (viewportHeight * 0.6);
     return Math.min(Math.max(opacity, 0), 1); // Limit the opacity between 0 and 1
-}
+}*/
 
 function load() {
-    var load = document.getElementById("loading");
-    load.style.display = "none";
+    document.getElementById("loading").style.display = "none";
 }
 
 function switchTheme() {
