@@ -25,19 +25,19 @@
 
 body {
   margin: 0;
-  width: 100%;
   font-family: 'Poppins';
-  overflow-x: hidden;
   background-image: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1 {
   color: var(--light-blue);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 header {
@@ -82,6 +82,7 @@ header {
 
 .text h3 {
   padding: 10px;
+  font-size: 1rem;
 }
 
 .element {
@@ -228,10 +229,6 @@ nav {
     margin: 1em 1em 1em 1em;
   }
 
-  #us-h2 {
-    margin-top: 100vh;
-  }
-
   #us {
     margin-left: 50px;
     margin-right: 50px;
@@ -243,13 +240,13 @@ nav {
 }
 
 #us {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   color: var(--light-blue);
 }
 
 #us-h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.2;
   color: var(--light-blue);
   justify-content: center;
@@ -272,6 +269,12 @@ nav {
   width: 80px;
   height: 80px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .arrow {
+    bottom: 50px;
+  }
 }
 
 @keyframes bounce {
@@ -317,19 +320,8 @@ nav {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 800px) {
-  .timeline {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .arrow {
-    display: none;
-  }
-}
-
 .skills {
-  margin-top: 50vh;
+  margin-top: 100vh;
 }
 
 .skills ul {
@@ -599,7 +591,7 @@ form {
   }
 }
 
-.about .timeline,
+.timeline,
 .skills,
 .project,
 .form {
@@ -609,7 +601,7 @@ form {
 
 @media screen and (max-width: 800px) {
 
-  .about .timeline,
+  .timeline,
   .skills,
   .project,
   .form {

@@ -41,7 +41,6 @@ window.addEventListener('scroll', function () {
 });
 
 // Get the divs
-const aboutDiv = document.querySelector('.about');
 const timelineDiv = document.querySelector('.timeline');
 const skillsDiv = document.querySelector('.skills');
 const projectDiv = document.querySelector('.project');
@@ -56,21 +55,18 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
     // Calculate the opacity for each div based on its position relative to the viewport
-    const aboutOpacity = calculateOpacity(aboutDiv.offsetTop, viewportHeight, scrollPosition);
     const timelineOpacity = calculateOpacity(timelineDiv.offsetTop, viewportHeight, scrollPosition);
     const skillsOpacity = calculateOpacity(skillsDiv.offsetTop, viewportHeight, scrollPosition);
     const projectOpacity = calculateOpacity(projectDiv.offsetTop, viewportHeight, scrollPosition);
     const formOpacity = calculateOpacity(formDiv.offsetTop, viewportHeight, scrollPosition);
 
     // Apply the opacity to each div
-    aboutDiv.style.opacity = aboutOpacity;
     timelineDiv.style.opacity = timelineOpacity;
     skillsDiv.style.opacity = skillsOpacity;
     projectDiv.style.opacity = projectOpacity;
     formDiv.style.opacity = formOpacity;
 
     // Apply a blur filter to each div based on its opacity
-    aboutDiv.style.filter = `blur(${aboutOpacity * -8}px)`;
     timelineDiv.style.filter = `blur(${timelineOpacity * -8}px)`;
     skillsDiv.style.filter = `blur(${skillsOpacity * -8}px)`;
     projectDiv.style.filter = `blur(${projectOpacity * -8}px)`;
