@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en_US, sl_SI">
+<html lang="en">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,43 +19,27 @@
     <link rel="stylesheet" href="files/style.css">
     <link rel="icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b94e1e9a72.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 
-<body onload="load()" class="dark">
-    <div class="loading" id="loading">
-        <div>
-            <h1>Loading...</h1>
-            <img src="img/buffer.webp">
-        </div>
-    </div>
-    <p id="top" style="opacity: 0; margin-top: -40px;">.</p>
-    <header>
-        <nav>
-            <div class="mobile-nav slide" id="mobile-nav">
+<body class="dark">
+    <header id="top">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="menu" onclick="showNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav slide">
                 <ul>
-                    <li><a href="#about-title">About me</a></li>
-                    <li><a href="#skills-title">Skills</a></li>
-                    <li><a href="#projects-title">Projects</a></li>
-                    <li><a href="#cont-me">Contact me</a></li>
-                    <li onclick="switchTheme()"><a id="switch" class="fas fa-moon"></a></li>
-                </ul>
-            </div>
-            <div class="logoDiv">
-                <a href="https://jakecer.tk">
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-            </div>
-            <div class="menu">
-                <img src="img/menu.png" alt="Show the menu." onclick="menuShow()">
-            </div>
-            <div class="navbar-link slide" id="navbar-link">
-                <ul>
-                    <li><a id="about" href="#about-title" title="Timeline">About me</a></li>
-                    <li><a id="skills" href="#skills-title" title="Skills">Skills</a></li>
-                    <li><a id="file" href="#projects-title" title="My projects.">Projects</a></li>
-                    <li><a id="contact" href="#cont-me" title="Contact me">Contact me</a></li>
-                    <li onclick="switchTheme()"><a id="switch" class="fas fa-moon"></a></li>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="#about" id="nav-about">About me</a></li>
+                    <li><a href="#skills" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects" id="nav-projects">Projects</a></li>
+                    <li><a href="#contact" id="nav-contact">Contact</a></li>
+                    <li onclick="switchTheme()"><a class="fa-solid fa-sun switcher"></a></li>
                     <li>
                         <select id="language-select" onchange="translatePage(this.value)" class="dropdown">
                             <option value="eng" class="dropdown-eng">ENG</option>
@@ -63,184 +47,177 @@
                         </select>
                     </li>
                 </ul>
-            </div>
-        </nav>
-        <div>
-            <span id="margin">‎</span>
+            </nav>
         </div>
-        <div class="o-Nas">
-            <h1 id="us">
-                Hi! I'm Jaka Černetič.
-            </h1>
-            <h3 class="us_text">
-                Student, web developer, computer enthusiast
-            </h3>
-        </div>
-        <div class="arrow">
-            <a href="#about-title">
-                <img src="img/arrow.png" alt="Go to timeline." title="Go down.">
-            </a>
+        <div class="welcome-text">
+            <h1>Jaka Černetič</h1>
+            <p id="welcome-text">Student, web developer, computer enthusiast</p>
         </div>
     </header>
-    <div class="text">
-        <div class="timeline element">
-            <h1 id="about-title" class="element">About me</h1>
-            <h3 id="us-h2">I'm a student in the first grade at
-                <a href="https://www.vegova.si" class="vegova">Vegova</a>
-                high school. I am currently learning web development, JavaScript, batch and C++.
-            </h3>
-
-            <div class="event">
-                <h3>2013</h3>
-                <p id="13">Started primary school.</p>
-            </div>
-            <div class="event">
-                <h3>2020</h3>
-                <p id="20">Started my coding journey.</p>
-            </div>
-            <div class="event">
-                <h3>2022</h3>
-                <p id="22-1">Started high school.</p>
-            </div>
-            <div class="event">
-                <h3>2022</h3>
-                <p id="22-2">Started actively learning web development.</p>
-            </div>
-            <div class="event">
-                <h3>Now</h3>
-                <p id="now">Learning web development, JavaScript, batch and C++.</p>
-            </div>
-        </div>
-        <div class="skills element">
-            <h1 id="skills-title">Skills</h1>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>NodeJS</li>
-                <li>Git</li>
-                <li>Arduino C++</li>
-                <li>Github</li>
-            </ul>
-        </div>
-        <div class="project element">
-            <h1 id="projects-title">Projects</h1>
-            <h3 id="proj">Here are some of the projects I've worked on.</h3>
-            <div class="project-grid">
-                <div class="grid-item">
-                    <h1>jakecer.tk</h1>
-                    <h3 id="proj1">My personal website.</h3>
-                    <a href="https://github.com/jakecernet/MainWebsite" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://jakecer.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>KrokyPlus</h1>
-                    <h3 id="proj2">Food ordering service improvment.</h3>
-                    <a href="https://github.com/jakecernet/KrokyPlus" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://krokyplus.me" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>JSGames</h1>
-                    <h3 id="proj3">Website with my JavaScript games.</h3>
-                    <a href="https://github.com/jakecernet/JSGames" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://jsgames.tech" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>YT Downloader</h1>
-                    <h3 id="proj4">YouTube to MP3 converter, made in Python.</h3>
-                    <a href="https://github.com/jakecernet/YT_Downloader" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                </div>
-                <div class="grid-item">
-                    <h1>Notes</h1>
-                    <h3 id="proj5">Simple notes taking website.</h3>
-                    <a href="https://github.com/jakecernet/Notes" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://notes.jakecer.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>Spaces.tk</h1>
-                    <h3 id="proj6">A website for our class.</h3>
-                    <a href="https://github.com/lin-cadez/lin-cadez.github.io" target="_blank"><img src="img/git.png"
-                            alt="" class="image"></a>
-                    <a href="https://spaces.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>Clock</h1>
-                    <h3 id="proj7">Clock, stopwatch and countdown website.</h3>
-                    <a href="https://github.com/jakecernet/Clock" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://clock.jakecer.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>Virtual Piano</h1>
-                    <h3 id="proj8">Simple virtual piano.</h3>
-                    <a href="https://github.com/jakecernet/Virtual-Piano" target="_blank"><img src="img/git.png" alt=""
-                            class="image"></a>
-                    <a href="https://piano.jakecer.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <h1>Vaje</h1>
-                    <h3 id="proj9">Exercises we did in class.</h3>
-                    <a href="https://github.com/jakecernet/Vaje_informatika" target="_blank"><img src="img/git.png"
-                            alt="" class="image"></a>
-                    <a href="https://vaje.jakecer.tk" target="_blank">
-                        <img src="img/net.png" alt="" class="image">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="form element">
-            <h1 id="cont-me">Contact me</h1>
-            <h3 id="cont-me-h2">If you want to contact me, you can do it here.</h3>
-            <ul class="contact" style="margin-top: 100px;">
-                <li><a href="discord" target="_blank"><img src="img/discord.png" class="contact-item" alt="discord"></a>
-                </li>
-                <li><a href="git" target="_blank"><img src="img/git.png" class="contact-item" alt="github"></a></li>
-                <li><a href="youtube" target="_blank"><img src="img/youtube.png" class="contact-item" alt="youtube"></a>
-                </li>
-                <li><a href="mail" target="_blank"><img src="img/mail.png" class="contact-item" alt="mail"></a></li>
-            </ul>
-            <form action="https://formspree.io/f/xnqykpza" method="POST">
-                <input type="text" name="name" placeholder="Name" class="form-item" required id="name">
-                <label for="name"></label>
-                <input type="email" name="email" placeholder="Email" class="form-item" required id="email">
-                <label for="email"></label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-item"
-                    required></textarea>
-                <input type="submit" value="Send" class="form-item" id="send">
-            </form>
-        </div>
+    <div class="arrow">
+        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
     <div class="top">
-        <a href="#top">
-            <img src="img/top.png" alt="Go to top." title="Go back to top.">
-        </a>
+        <a href="#top"><span class="fa-solid fa-arrow-up"></span></a>
+    </div>
+    <div class="contents">
+        <section class="about" id="about">
+            <div class="content">
+                <h2>About me</h2>
+                <p id="about-text">I'm a student of the 2nd year of the Technical Gymnasium program at Vegova Ljubljana.
+                    In my free time I like to program and ride my bike.</p>
+                <div class="timeline">
+                    <div class="event">
+                        <h3>2013</h3>
+                        <a id="13">Started primary school</a>
+                    </div>
+                    <div class="event">
+                        <h3>2020</h3>
+                        <a id="20">Started my coding journey</a>
+                    </div>
+                    <div class="event">
+                        <h3>2022</h3>
+                        <a id="22-1">Started high school</a>
+                    </div>
+                    <div class="event">
+                        <h3>2022</h3>
+                        <a id="22-2">Started actively learning web development</a>
+                    </div>
+                    <div class="event">
+                        <h3>2023</h3>
+                        <a id="now">Learning web development, JavaScript, batch and C++</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="content">
+                <h2 id="skills-title">My skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                    <li>Git</li>
+                    <li>Arduino C++</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="content">
+                <h2>My projects</h2>
+                <div class="project-items">
+                    <div class="project-item">
+                        <h1>jakecer.tk</h1>
+                        <h3 id="proj1">My personal website.</h3>
+                        <a href="https://github.com/jakecernet/MainWebsite" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://jakecer.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>KrokyPlus</h1>
+                        <h3 id="proj2">Food ordering service improvment.</h3>
+                        <a href="https://github.com/jakecernet/KrokyPlus" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://krokyplus.me" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>JSGames</h1>
+                        <h3 id="proj3">Website with my JavaScript games.</h3>
+                        <a href="https://github.com/jakecernet/JSGames" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://jsgames.tech" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>YT Downloader</h1>
+                        <h3 id="proj4">YouTube to MP3 converter, made in Python.</h3>
+                        <a href="https://github.com/jakecernet/YT_Downloader" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="project-item">
+                        <h1>Notes</h1>
+                        <h3 id="proj5">Simple notes taking website.</h3>
+                        <a href="https://github.com/jakecernet/Notes" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://notes.jakecer.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>Spaces.tk</h1>
+                        <h3 id="proj6">A website for our class.</h3>
+                        <a href="https://github.com/lin-cadez/lin-cadez.github.io" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://spaces.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>Clock</h1>
+                        <h3 id="proj7">Clock, stopwatch and countdown website.</h3>
+                        <a href="https://github.com/jakecernet/Clock" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://clock.jakecer.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>Virtual Piano</h1>
+                        <h3 id="proj8">Simple virtual piano.</h3>
+                        <a href="https://github.com/jakecernet/Virtual-Piano" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://piano.jakecer.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h1>Vaje</h1>
+                        <h3 id="proj9">Exercises we did in class.</h3>
+                        <a href="https://github.com/jakecernet/Vaje_informatika" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://vaje.jakecer.tk" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>Here are some ways you can contact me.</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <a href="pages/discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="pages/git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="pages/mail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xnqykpza" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
     </div>
     <footer>
-        <a href="https://jakecer.tk">
-            © Jaka Černetič, 2023
-        </a>
+        <p>© 2023 Jaka Černetič</p>
     </footer>
-    <script src="files/script.js"></script>
+    <script src="files/index.js"></script>
     <script src="files/translate.js"></script>
 </body>
 
