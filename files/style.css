@@ -231,12 +231,13 @@ section .content ul li {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     background: var(--background);
+    z-index: 1000;
 }
 
 .top a {
@@ -268,11 +269,12 @@ section .content ul li {
 }
 
 .event a {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     color: var(--text);
     text-decoration: none;
     margin-left: 20px;
+    align-items: flex-end;
 }
 
 .skills ul {
@@ -481,21 +483,23 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         position: absolute;
         top: 0;
         right: 0;
+        max-width: 1000vw;
         width: 100%;
-        margin-top: 180px;
+        margin-top: 100px;
         transition: 0.3s ease;
-    }
-
-    header nav.active {
-        opacity: 1;
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 8px;
     }
 
     header .menu {
         display: flex;
+        justify-content: center;
+        z-index: 1000;
     }
 
     header .welcome-text {
@@ -511,7 +515,7 @@ footer p {
     }
 
     section {
-        margin-top: 100vh;
+        margin-top: 40vh;
     }
 
     section .content h2 {
@@ -524,14 +528,6 @@ footer p {
 
     section .content ul li {
         font-size: 16px;
-    }
-
-    .top {
-        bottom: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        z-index: 100;
     }
 
     .top a {
@@ -560,15 +556,16 @@ footer p {
     }
 
     .project-items {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .project-items .project-item {
+        margin-top: 20px;
         font-size: 1em;
     }
 
     .project-items .project-item h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .project-items .project-item h3 {
@@ -576,7 +573,7 @@ footer p {
     }
 
     .contact .contact-items a {
-        margin: 10px;
+        margin: 0 10px;
     }
 
     footer p {
@@ -597,5 +594,9 @@ footer p {
 
     .fa-discord {
         font-size: 40px;
+    }
+
+    .about {
+        margin-top: 100vh;
     }
 }
