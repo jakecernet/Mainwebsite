@@ -4,7 +4,8 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Hi! I'm a front-end learning Vegovec and this is my website.">
     <meta property="og:type" content="website">
@@ -14,12 +15,14 @@
     <meta property="og:image" content="https://jakecer.tk/img/logo.png">
     <meta property="og:site_name" content="Jaka Černetič">
     <meta property="og:locale" content="sl_SI">
+    <meta name="theme-color" content="#317EFB" />
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Jaka Černetič</title>
     <link rel="stylesheet" href="files/style.css">
     <link rel="icon" href="img/logo.ico">
+    <link rel="manifest" href="files/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b94e1e9a72.js" crossorigin="anonymous"></script>
+    <script src="files/kit.fontawesome.com_b94e1e9a72.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="dark">
@@ -216,6 +219,11 @@
     <footer>
         <p>© 2023 Jaka Černetič</p>
     </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('files/sw.js');
+        }
+    </script>
     <script src="files/index.js"></script>
     <script src="files/translate.js"></script>
 </body>
