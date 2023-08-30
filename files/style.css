@@ -1,11 +1,13 @@
 .light {
     --text: #111;
     --background: linear-gradient(135deg, #71b7e6, #7559b6);
+    --item_background: rgba(255, 255, 255, 0.671);
 }
 
 .dark {
     --text: #fff;
-    --background: linear-gradient(135deg, #1e202e, #0a1a62);
+    --background: linear-gradient(135deg, #1e202e, #081346);
+    --item_background: rgba(3, 6, 17, 0.671);
 }
 
 * {
@@ -237,7 +239,7 @@ section .content ul li {
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    background: var(--background);
+    background: var(--item_background);
     z-index: 1000;
 }
 
@@ -296,13 +298,15 @@ section .content ul li {
     color: var(--text);
     margin: 10px;
     box-shadow: 0 0 4px black;
-    background: var(--background);
+    background: var(--item_background);
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
 }
 
 .skills ul li:hover {
-    background: linear-gradient(var(--background), black);
     cursor: pointer;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(71, 71, 71);
     scale: 1.1;
 }
 
@@ -314,21 +318,23 @@ section .content ul li {
 }
 
 .project-items .project-item {
-    background: var(--background);
+    background: var(--item_background);
     padding: 20px;
     font-size: 1.2em;
     border-radius: 2px;
     text-decoration: none;
     color: var(--light-blue);
     margin-top: 20px;
-    box-shadow: 0 0 10px black;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
     transition: 0.3s ease;
     text-align: center;
 }
 
 .project-items .project-item:hover {
     scale: 1.04;
-    box-shadow: 10px 10px 20px black;
+    box-shadow: 0 0 10px rgb(71, 71, 71);
 }
 
 .project-items .project-item h1 {
@@ -344,7 +350,6 @@ section .content ul li {
 }
 
 .contact {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,9 +362,10 @@ section .content ul li {
     align-items: center;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 180px;
 }
 
-.contact form {
+/*.contact form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,7 +391,7 @@ section .content ul li {
 .contact form input:focus,
 .contact form textarea:focus {
     box-shadow: 0 0 10px black;
-}
+}*/
 
 footer {
     position: fixed;
