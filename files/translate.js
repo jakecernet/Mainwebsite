@@ -3,7 +3,6 @@ var selectedLanguage = languageSelect.value;
 
 function changeToSlo() {
     //NavBar
-    document.getElementById("home").innerHTML = "Domov";
     document.getElementById("nav-about").innerHTML = "O meni";
     document.getElementById("nav-contact").innerHTML = "Kontakt";
     document.getElementById("nav-skills").innerHTML = "Znanja";
@@ -29,7 +28,6 @@ function changeToSlo() {
 
 function changeToEng() {
     //NavBar
-    document.getElementById("home").innerHTML = "Home";
     document.getElementById("nav-about").innerHTML = "About";
     document.getElementById("nav-contact").innerHTML = "Contact";
     document.getElementById("nav-skills").innerHTML = "Skills";
