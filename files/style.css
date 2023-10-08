@@ -81,11 +81,12 @@ header .logo {
     left: 0;
 }
 
-header .logo img {
-    width: 80px;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header .logo h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text);
+    top: 0;
+    left: 0;
 }
 
 header nav {
@@ -138,7 +139,7 @@ header .welcome-text {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 22vh;
 }
 
 header .welcome-text h1 {
@@ -200,13 +201,14 @@ section .content h2 {
     font-size: 30px;
     font-weight: 600;
     color: var(--text);
+    margin-bottom: 20px;
 }
 
 section .content p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     color: var(--text);
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -424,24 +426,52 @@ footer p {
     font-size: 50px;
     margin: 10px;
     color: var(--text);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.fa-github:hover {
+    color: #f0f0f0;
+    scale: 1.1;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .fa-globe {
     font-size: 50px;
     margin: 10px;
     color: var(--text);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.fa-globe:hover {
+    color: #f0f0f0;
+    scale: 1.1;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .fa-discord {
     font-size: 50px;
     margin: 10px;
     color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.fa-discord:hover {
+    color: #7289DA;
+    scale: 1.1;
 }
 
 .fa-envelope {
     font-size: 50px;
     margin: 10px;
     color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.fa-envelope:hover {
+    color: #ffffff;
+    scale: 1.1;
 }
 
 .fa-sun {
@@ -511,7 +541,7 @@ footer p {
     }
 
     header .welcome-text {
-        margin-top: 20vh;
+        margin-top: 25vh;
     }
 
     header .welcome-text h1 {
@@ -596,12 +626,28 @@ footer p {
         font-size: 40px;
     }
 
+    .fa-github:hover {
+        scale: 1;
+    }
+
     .fa-globe {
         font-size: 40px;
     }
 
     .fa-discord {
         font-size: 40px;
+    }
+
+    .fa-discord:hover {
+        scale: 1;
+    }
+
+    .fa-envelope {
+        font-size: 40px;
+    }
+
+    .fa-envelope:hover {
+        scale: 1;
     }
 
     .about {
