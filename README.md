@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://jakecer.tk" target="_blank">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="files/icons/logo.ico" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">jakecer.tk</h3>
