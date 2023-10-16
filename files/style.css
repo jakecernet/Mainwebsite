@@ -2,12 +2,14 @@
     --text: #111;
     --background: linear-gradient(135deg, #71b7e6, #7559b6);
     --item_background: rgba(255, 255, 255, 0.671);
+    --glow: 0 0 10px rgb(0, 0, 0);
 }
 
 .dark {
     --text: #fff;
-    --background: linear-gradient(135deg, #1e202e, #081346);
+    --background: linear-gradient(135deg, #081346, #2c1238);
     --item_background: rgba(3, 6, 17, 0.671);
+    --glow: 0 0 10px rgb(255, 255, 255);
 }
 
 * {
@@ -30,7 +32,7 @@ body {
     display: none;
 }
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: 600;
     color: var(--text);
@@ -65,127 +67,7 @@ h1{
     transform-origin: bottom;
 }
 
-header {
-    position: absolute;
-    width: 100%;
-    max-width: 1400px;
-    padding: 0 20px;
-    top: 0;
-}
 
-header .navbar {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px;
-}
-
-header .logo {
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text);
-    top: 0;
-    left: 0;
-}
-
-header .logo h1 {
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text);
-    top: 0;
-    left: 0;
-}
-
-header nav {
-    top: 0;
-    right: 0;
-    opacity: 1;
-    display: flex;
-}
-
-header nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text);
-    transition: all 0.3s ease;
-}
-
-header nav ul li select {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text);
-    transition: all 0.3s ease;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-header nav ul li select:focus {
-    color: #555;
-}
-
-header .menu {
-    width: 50px;
-    cursor: pointer;
-    display: none;
-}
-
-header .welcome-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 22vh;
-}
-
-header .welcome-text h1 {
-    font-size: 50px;
-    font-weight: 600;
-    color: var(--text);
-}
-
-header .welcome-text p {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--text);
-    margin-top: 40px;
-}
-
-.arrow {
-    animation: animate 3s infinite;
-    bottom: 40px;
-    position: absolute;
-    right: 50%;
-    translate: 50%;
-}
-
-.arrow img {
-    width: 80px;
-}
-
-@keyframes animate {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-}
 
 section {
     max-width: 1200px;
@@ -248,7 +130,7 @@ section .content ul li {
     display: none;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--glow);
     transition: all 0.3s ease;
     background: var(--item_background);
     z-index: 1000;
@@ -258,37 +140,6 @@ section .content ul li {
     text-decoration: none;
     color: var(--text);
     font-size: 30px;
-}
-
-.timeline {
-    margin-top: 40px;
-}
-
-.event {
-    padding: 30px;
-    margin-bottom: 20px;
-    background: var(--background);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 4px;
-}
-
-.event h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text);
-}
-
-.event a {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--text);
-    text-decoration: none;
-    margin-left: 20px;
-    align-items: flex-end;
 }
 
 .skills ul {
@@ -376,34 +227,6 @@ section .content ul li {
     margin-bottom: 180px;
 }
 
-/*.contact form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    font-size: 1em;
-    font-weight: 500;
-    color: var(--text);
-    background: var(--background);
-    box-shadow: 0 0 10px black;
-}
-
-.contact form input:focus,
-.contact form textarea:focus {
-    box-shadow: 0 0 10px black;
-}*/
-
 footer {
     position: fixed;
     bottom: 0;
@@ -439,9 +262,8 @@ footer p {
 }
 
 .fa-github:hover {
-    color: #f0f0f0;
     scale: 1.1;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: var(--glow);
 }
 
 .fa-globe {
@@ -453,9 +275,8 @@ footer p {
 }
 
 .fa-globe:hover {
-    color: #f0f0f0;
     scale: 1.1;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: var(--glow);
 }
 
 .fa-discord {
@@ -519,47 +340,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        max-width: 100vw;
-        width: 100vw;
-    }
-
-    header nav {
-        opacity: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 1000vw;
-        width: 100%;
-        margin-top: 100px;
-        transition: 0.3s ease;
-        backdrop-filter: blur(10px);
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    header .menu {
-        display: flex;
-        justify-content: center;
-        z-index: 1000;
-    }
-
-    header .welcome-text {
-        margin-top: 25vh;
-    }
-
-    header .welcome-text h1 {
-        font-size: 40px;
-    }
-
-    header .welcome-text p {
-        font-size: 16px;
-    }
-
     section {
         margin-top: 40vh;
     }
@@ -662,7 +442,7 @@ footer p {
         margin-top: 100vh;
     }
 
-    .dropdown{
+    .dropdown {
         height: 48px;
         padding: 0;
     }
