@@ -145,6 +145,14 @@ section .content ul li {
     font-size: 30px;
 }
 
+.top:active {
+    scale: 0.9;
+}
+
+.top:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
 .skills ul {
     max-width: 850px;
     margin: 0 auto;
@@ -334,6 +342,41 @@ footer p {
 .fa-discord:hover {
     color: #7289DA;
     scale: 1.1;
+    animation: discord 1.5s infinite;
+}
+
+.contact-item .fa-github:hover {
+    background: #0b0a0e;
+    box-shadow: none;
+    animation: github 1s infinite;
+}
+
+@keyframes discord {
+    0% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 360deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes github {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 .fa-envelope {
@@ -341,11 +384,13 @@ footer p {
     margin: 10px;
     color: var(--text);
     transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 0 6px;
 }
 
 .fa-envelope:hover {
-    color: #ffffff;
-    scale: 1.1;
+    color: #156492;
+    background: #fff;
 }
 
 .fa-sun {
