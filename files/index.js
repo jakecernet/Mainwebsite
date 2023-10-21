@@ -19,3 +19,10 @@ function showNav() {
         nav.style.pointerEvents = 'auto';
     }
 }
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

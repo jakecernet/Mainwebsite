@@ -28,8 +28,8 @@
 <body class="dark">
     <header id="top">
         <div class="navbar">
-            <div class="logo">
-                <h1>Jakecer</h1>
+            <div class="logo slide">
+                <a href="/">Jakecer</a>
             </div>
             <div class="menu" onclick="showNav()">
                 <i class="fa-solid fa-bars"></i>
@@ -39,6 +39,7 @@
                     <li><a alt="link" href="#about" id="nav-about">About me</a></li>
                     <li><a alt="link" href="#skills" id="nav-skills">Skills</a></li>
                     <li><a alt="link" href="#projects" id="nav-projects">Projects</a></li>
+                    <li><a alt="link" href="#friends" id="nav-friends">Friends</a></li>
                     <li><a alt="link" href="#contact" id="nav-contact">Contact</a></li>
                     <li onclick="switchTheme()"><a class="fa-solid fa-sun switcher"></a></li>
                     <li>
@@ -59,8 +60,8 @@
     <div class="arrow">
         <a alt="link" href="#about">‎<i class="fa-solid fa-chevron-down"></i></a>
     </div>
-    <div class="top">
-        <a alt="link" href="#top">‎<span class="fa-solid fa-arrow-up"></span></a>
+    <div class="top" onclick="scrollToTop()">
+        <a alt="link">‎<span class="fa-solid fa-arrow-up"></span></a>
     </div>
     <div class="contents">
         <section class="about" id="about">
@@ -183,6 +184,23 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="friends" id="friends">
+            <h1>Friends on the web</h1>
+            <ul>
+                <li onclick="window.location.href='https://spaces.tk'">
+                    <a href="https://spaces.tk">Lin Čadež</a>
+                </li>
+                <li onclick="window.location.href='https://majmohar.me'">
+                    <a href="https://majmohar.me">Maj Mohar</a>
+                </li>
+                <li onclick="window.location.href='https://gribanica.me'">
+                    <a href="https://gribanica.me">Andriy Gryban</a>
+                </li>
+                <li onclick="window.location.href='https://dodoworks.neocities.org'">
+                    <a href="https://dodoworks.neocities.org">Dorian Mahnič Dobrovoljc</a>
+                </li>
+            </ul>
         </section>
         <section class="contact" id="contact">
             <div class="content">

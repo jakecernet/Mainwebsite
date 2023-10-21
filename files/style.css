@@ -38,6 +38,7 @@ h1 {
     color: var(--text);
     top: 0;
     left: 0;
+    margin-bottom: 40px;
 }
 
 .slide a {
@@ -45,6 +46,8 @@ h1 {
     display: inline-block;
     position: relative;
     padding: 10px;
+    cursor: pointer;
+    color: var(--text);
 }
 
 .slide a::after {
@@ -209,6 +212,48 @@ section .content ul li {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--text);
+}
+
+.friends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.friends ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.friends ul li {
+    background: var(--item_background);
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 2px;
+    color: var(--light-blue);
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.friends ul li a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.friends ul li:hover {
+    scale: 1.04;
+    box-shadow: 0 0 10px rgb(71, 71, 71);
+    cursor: pointer;
 }
 
 .contact {
