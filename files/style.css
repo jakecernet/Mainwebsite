@@ -153,6 +153,12 @@ section .content ul li {
     box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
+.about .content p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 15px;
+}
+
 .skills ul {
     max-width: 850px;
     margin: 0 auto;
@@ -197,7 +203,7 @@ section .content ul li {
 
 .project-items .project-item {
     background: var(--item_background);
-    padding: 20px;
+    padding: 25px;
     font-size: 1.2em;
     border-radius: 2px;
     color: var(--light-blue);
