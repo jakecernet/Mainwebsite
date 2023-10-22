@@ -183,6 +183,10 @@ section .content ul li {
     scale: 1.1;
 }
 
+.skills ul li:active {
+    scale: 0.9;
+}
+
 .project-items {
     display: flex;
     justify-content: center;
@@ -208,6 +212,10 @@ section .content ul li {
 .project-items .project-item:hover {
     scale: 1.04;
     box-shadow: 0 0 10px rgb(71, 71, 71);
+}
+
+.project-items .project-item:active {
+    scale: 0.9;
 }
 
 .project-items .project-item h1 {
@@ -262,6 +270,10 @@ section .content ul li {
     scale: 1.04;
     box-shadow: 0 0 10px rgb(71, 71, 71);
     cursor: pointer;
+}
+
+.friends ul li:active {
+    scale: 0.9;
 }
 
 .contact {

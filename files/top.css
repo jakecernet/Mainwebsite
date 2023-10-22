@@ -162,3 +162,12 @@ header .welcome-text p {
         font-size: 16px;
     }
 }
+
+#welcome-text {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflowing text */
+    border-right: 2px solid var(--text);
+    /* Create a typing cursor */
+}
