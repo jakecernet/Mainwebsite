@@ -153,7 +153,7 @@ section .content ul li {
     box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
-.about .content p{
+.about .content p {
     font-size: 1.5rem;
     font-weight: 200;
     padding: 15px;
@@ -193,7 +193,7 @@ section .content ul li {
     scale: 0.9;
 }
 
-.slider .left-arrow{
+.slider .left-arrow {
     position: absolute;
     top: 50%;
     left: 0;
@@ -212,7 +212,7 @@ section .content ul li {
     color: var(--text);
 }
 
-.slider .right-arrow{
+.slider .right-arrow {
     position: absolute;
     top: 50%;
     right: 0;
@@ -254,74 +254,77 @@ section .content ul li {
 }
 
 .slider .slides .element {
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-}
-
-@keyframes slideOut{
-    0%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100%{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-@keyframes slideIn{
-    0%{
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.project-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.project-items .project-item {
     background: var(--item_background);
-    padding: 25px;
+    padding: 30px;
     font-size: 1.2em;
     border-radius: 2px;
     color: var(--light-blue);
-    margin: 20px;
+    margin: 10px;
     box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    box-shadow: var(--glow);
     border-radius: 10px;
     transition: 0.3s ease;
     text-align: center;
 }
 
-.project-items .project-item:hover {
-    scale: 1.04;
-    box-shadow: 0 0 10px rgb(71, 71, 71);
-}
-
-.project-items .project-item:active {
-    scale: 0.9;
-}
-
-.project-items .project-item h1 {
+.slider .slides .element h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--text);
 }
 
-.project-items .project-item h3 {
+.slider .slides .element h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--text);
+}
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .friends {
