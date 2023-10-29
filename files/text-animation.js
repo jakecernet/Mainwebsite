@@ -1,11 +1,11 @@
 const text = document.getElementById('welcome-text').textContent;
 document.getElementById('welcome-text').textContent = ''; // Clear the text
-let i = 0;
+let variable = 0;
 
 function typeWriter() {
-    if (i < text.length) {
-        document.getElementById('welcome-text').textContent += text.charAt(i);
-        i++;
+    if (variable < text.length) {
+        document.getElementById('welcome-text').textContent += text.charAt(variable);
+        variable++;
         setTimeout(typeWriter, 50); // Adjust the typing speed (delay) here
     } 
     //when done, set border of text to none

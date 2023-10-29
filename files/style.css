@@ -250,7 +250,7 @@ section .content ul li {
 .slider .slides {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 80vh
 }
 
 .slider .slides .element {
@@ -267,6 +267,11 @@ section .content ul li {
     text-align: center;
 }
 
+.slider .slides .element img {
+    width: 20vh;
+    margin-bottom: 20px;
+}
+
 .slider .slides .element h1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -277,6 +282,24 @@ section .content ul li {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--text);
+}
+
+.slider .slides .element a{
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: var(--item_background);
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.slider .slides .element a:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 @keyframes slideOutLeft {
@@ -423,22 +446,12 @@ footer p {
     border-radius: 50%;
 }
 
-.fa-github:hover {
-    scale: 1.1;
-    box-shadow: var(--glow);
-}
-
 .fa-globe {
     font-size: 50px;
     margin: 10px;
     color: var(--text);
     transition: all 0.3s ease;
     border-radius: 50%;
-}
-
-.fa-globe:hover {
-    scale: 1.1;
-    box-shadow: var(--glow);
 }
 
 .fa-discord {
