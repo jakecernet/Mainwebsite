@@ -266,6 +266,7 @@ section .content ul li {
     transition: 0.3s ease;
     text-align: center;
     width: 60vw;
+    height: 90vh;
 }
 
 .slider .slides .element img {
@@ -283,6 +284,13 @@ section .content ul li {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--text);
+}
+
+.slider .slides .element span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .slider .slides .element a {
@@ -479,6 +487,14 @@ footer p {
     background: #0b0a0e;
     box-shadow: none;
     animation: github 1s infinite;
+}
+
+.fa-html5{
+    color: #e34f26;
+}
+
+.fa-css3-alt{
+    color: #264de4;
 }
 
 @keyframes discord {
