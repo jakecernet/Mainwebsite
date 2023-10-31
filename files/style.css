@@ -265,6 +265,7 @@ section .content ul li {
     border-radius: 10px;
     transition: 0.3s ease;
     text-align: center;
+    width: 60vw;
 }
 
 .slider .slides .element img {
@@ -284,7 +285,7 @@ section .content ul li {
     color: var(--text);
 }
 
-.slider .slides .element a{
+.slider .slides .element a {
     text-decoration: none;
     color: var(--text);
     display: flex;
@@ -292,10 +293,9 @@ section .content ul li {
     flex-direction: row;
     align-items: center;
     background: var(--item_background);
-    padding: 10px 5px;
+    padding: 20px;
     border-radius: 10px;
     margin: 20px;
-    box-sizing: border-box;
 }
 
 .slider .slides .element a:hover {
