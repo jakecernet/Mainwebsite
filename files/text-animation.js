@@ -36,7 +36,7 @@ function typeWriter3() {
     if (variable3 < text3.length) {
         document.getElementById('text3').textContent += text3.charAt(variable3);
         variable3++;
-        setTimeout(typeWriter3, 100); // Adjust the typing speed (delay) here
+        setTimeout(typeWriter3, 60); // Adjust the typing speed (delay) here
     }
     //when done, set border of text to none
     else {
@@ -44,6 +44,6 @@ function typeWriter3() {
     }
 }
 
-onload = setTimeout(typeWriter2, 1000); // Adjust the delay here
-onload = setTimeout(typeWriter3, 1500); // Adjust the delay here
-onload = setTimeout(typeWriter, 3000); // Adjust the delay here
+onload = typeWriter2();
+onload = setTimeout(typeWriter3, 500); // Adjust the delay here
+onload = setTimeout(typeWriter, 1500); // Adjust the delay here

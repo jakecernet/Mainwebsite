@@ -70,10 +70,28 @@ h1 {
     transform-origin: bottom;
 }
 
+ul {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
 
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 850px;
+}
 
 section {
-    max-width: 1200px;
+    max-width: 100vw;
     padding: 0 20px;
     display: flex;
     justify-content: center;
@@ -210,6 +228,7 @@ section .content ul li {
     background: var(--item_background);
     z-index: 1000;
     color: var(--text);
+    margin: 0 20px;
 }
 
 .slider .right-arrow {
@@ -229,6 +248,7 @@ section .content ul li {
     background: var(--item_background);
     z-index: 1000;
     color: var(--text);
+    margin: 0 20px;
 }
 
 .slider .left-arrow:hover {
@@ -489,11 +509,11 @@ footer p {
     animation: github 1s infinite;
 }
 
-.fa-html5{
+.fa-html5 {
     color: #e34f26;
 }
 
-.fa-css3-alt{
+.fa-css3-alt {
     color: #264de4;
 }
 
