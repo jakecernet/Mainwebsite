@@ -10,16 +10,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://jakecer.tk" target="_blank">
+  <a href="https://cernetic.cc" target="_blank">
     <img src="files/icons/logo.ico" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">jakecer.tk</h3>
+<h3 align="center">cernetic.cc</h3>
 
   <p align="center">
     My main website.
     <br />
-    <a href="https://jakecer.tk" target="_blank"><strong>Visit the website »</strong></a>
+    <a href="https://cernetic.cc" target="_blank"><strong>Visit the website »</strong></a>
     <br />
     <br />
     <a href="https://github.com/jakecernet/MainWebsite/issues">Report Bug</a>
