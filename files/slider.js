@@ -1,7 +1,7 @@
 n = 1;
 
 //show only first slide, hide the rest
-for (i = 2; i <= 9; i++) {
+for (i = 2; i <= 10; i++) {
     document.getElementById(i).style.display = "none";
 }
 
@@ -9,14 +9,14 @@ function moveSlidesLeft() {
     n++;
 
     //if n is more than 4, go back to 1
-    if (n > 9) {
+    if (n > 10) {
         n = 1;
         document.getElementById(n).style.animation = "slideInLeft 0.5s";
         document.getElementById(n).style.display = "block";
-        document.getElementById(9).style.display = "none";
-        document.getElementById(9).style.animation = "";
+        document.getElementById(10).style.display = "none";
+        document.getElementById(10).style.animation = "";
     } else if (n < 1) {
-        n = 9;
+        n = 10;
         document.getElementById(n).style.animation = "slideInLeft 0.5s";
         document.getElementById(n).style.display = "block";
         document.getElementById(1).style.display = "none";
@@ -40,14 +40,14 @@ function moveSlidesLeft() {
 function moveSlidesRight() {
     n--;
 
-    if (n > 9) {
+    if (n > 10) {
         n = 1;
         document.getElementById(n).style.animation = "slideInRight 0.5s";
         document.getElementById(n).style.display = "block";
-        document.getElementById(9).style.display = "none";
-        document.getElementById(9).style.animation = "";
+        document.getElementById(10).style.display = "none";
+        document.getElementById(10).style.animation = "";
     } else if (n < 1) {
-        n = 9;
+        n = 10;
         document.getElementById(n).style.animation = "slideInRight 0.5s";
         document.getElementById(n).style.display = "block";
         document.getElementById(1).style.display = "none";
