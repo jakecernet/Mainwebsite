@@ -415,6 +415,10 @@ section .content ul li {
     scale: 0.9;
 }
 
+.friends h1{
+    text-align: center;
+}
+
 .contact {
     display: flex;
     justify-content: center;

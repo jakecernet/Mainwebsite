@@ -20,6 +20,7 @@ header .logo {
     color: var(--text);
     top: 0;
     left: 0;
+    text-align: center;
 }
 
 header .logo h1 {
@@ -28,6 +29,7 @@ header .logo h1 {
     color: var(--text);
     top: 0;
     left: 0;
+    text-align: center;
 }
 
 header nav {
