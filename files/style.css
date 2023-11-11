@@ -295,7 +295,10 @@ section .content ul li {
     border-radius: 10px;
     transition: 0.3s ease;
     text-align: center;
-    width: 30vw;
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider .slides .element img {
