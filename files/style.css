@@ -239,6 +239,7 @@ section .content ul li {
     background: var(--item_background);
     color: var(--text);
     margin: 0 20px;
+    z-index: 1000;
 }
 
 .slider .right-arrow {
@@ -257,6 +258,7 @@ section .content ul li {
     background: var(--item_background);
     color: var(--text);
     margin: 0 20px;
+    z-index: 1000;
 }
 
 .slider .left-arrow:hover {
@@ -293,12 +295,11 @@ section .content ul li {
     border-radius: 10px;
     transition: 0.3s ease;
     text-align: center;
-    width: 60vw;
-    height: 90vh;
+    width: 30vw;
 }
 
 .slider .slides .element img {
-    width: 20vh;
+    width: 10vh;
     margin-bottom: 20px;
 }
 
@@ -315,7 +316,7 @@ section .content ul li {
 }
 
 .slider .slides .element span {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 2em;
     font-weight: 600;
@@ -329,61 +330,13 @@ section .content ul li {
     flex-direction: row;
     align-items: center;
     background: var(--item_background);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin: 20px;
 }
 
 .slider .slides .element a:hover {
     box-shadow: 0 0 15px rgb(0, 0, 0);
-}
-
-@keyframes slideOutLeft {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideOutRight {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 .friends {
