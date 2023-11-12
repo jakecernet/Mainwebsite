@@ -19,6 +19,7 @@ function changeToSlo() {
     //Skills
     document.getElementById("skills-title").innerHTML = "Znanja";
     document.getElementById("windows").innerHTML = "Popravljanje naključnih Windows napak";
+    document.getElementById("drone").innerHTML = "A1/A3 upravljalec drona";
 
     //Projects
     document.getElementById("projects-title").innerHTML = "Projekti";
@@ -42,6 +43,7 @@ function changeToEng() {
     //Skills
     document.getElementById("skills-title").innerHTML = "Skills";
     document.getElementById("windows").innerHTML = "Fixing random Windows errors";
+    document.getElementById("drone").innerHTML = "A1/A3 drone pilot";
 
     //Projects
     document.getElementById("projects-title").innerHTML = "Projects";
