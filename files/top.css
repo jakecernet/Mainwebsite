@@ -17,7 +17,6 @@ header .navbar {
 header .logo {
     font-size: 30px;
     font-weight: 600;
-    color: var(--text);
     top: 0;
     left: 0;
     text-align: center;
@@ -26,7 +25,6 @@ header .logo {
 header .logo h1 {
     font-size: 30px;
     font-weight: 600;
-    color: var(--text);
     top: 0;
     left: 0;
     text-align: center;
@@ -94,7 +92,7 @@ header .welcome-text h1 {
 header .welcome-text p {
     font-size: 20px;
     font-weight: 500;
-    color: var(--text);
+    color: var(--text2);
     margin-top: 40px;
 }
 
@@ -167,9 +165,6 @@ header .welcome-text p {
 
 #welcome-text {
     white-space: nowrap;
-    /* Prevent text from wrapping */
     overflow: hidden;
-    /* Hide overflowing text */
-    border-right: 2px solid var(--text);
-    /* Create a typing cursor */
+    border-right: 2px solid var(--text2);
 }

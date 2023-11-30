@@ -1,15 +1,17 @@
 .light {
     --text: #111;
+    --text2: #fff;
     --background: linear-gradient(135deg, #71b7e6, #7559b6);
     --item_background: rgba(255, 255, 255, 0.671);
     --glow: 0 0 10px rgb(0, 0, 0);
 }
 
 .dark {
-    --text: #fff;
-    --background: linear-gradient(135deg, #081346, #2c1238);
-    --item_background: rgba(3, 6, 17, 0.671);
-    --glow: 0 0 10px rgb(255, 255, 255);
+    --text: #B6EADA;
+    --text2: #7475a1;
+    --background: linear-gradient(135deg, rgb(0, 1, 14), 60%, #350b2b);
+    --item_background: rgba(3, 6, 17, 0.308);
+    --glow: 0 0 10px #B6EADA;
 }
 
 * {
@@ -562,6 +564,10 @@ footer p {
     font-weight: 700;
     color: var(--text);
     transition: all 0.3s ease;
+}
+
+.text2 {
+    color: var(--text2);
 }
 
 @media screen and (max-width: 768px) {
