@@ -9,7 +9,7 @@
 .dark {
     --text: #B6EADA;
     --text2: #7475a1;
-    --background: linear-gradient(135deg, rgb(0, 1, 14), 60%, #350b2b);
+    --background: linear-gradient(135deg, #12100E, 60%, #2B4162);
     --item_background: rgba(3, 6, 17, 0.308);
     --glow: 0 0 10px #B6EADA;
 }
@@ -302,6 +302,10 @@ section .content ul li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .slider .slides .element img {
@@ -338,7 +342,8 @@ section .content ul li {
     background: var(--item_background);
     padding: 10px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 300px;
 }
 
 .slider .slides .element a:hover {

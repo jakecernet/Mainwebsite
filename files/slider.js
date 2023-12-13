@@ -1,6 +1,6 @@
 let n = 1;
 
-for (let i = 1; i < 11; i++) {
+for (let i = 1; i < 8; i++) {
     const slide = document.getElementById(i);
     slide.style.opacity = "0";
     slide.style.display = "none";
@@ -13,9 +13,9 @@ function moveSlides(direction) {
     const previousN = n;
 
     if (direction === "left") {
-        n = (n % 10) + 1;
+        n = (n % 7) + 1;
     } else {
-        n = (n - 2 + 10) % 10 + 1;
+        n = (n - 2 + 7) % 7 + 1;
     }
 
     const currentSlide = document.getElementById(n);
@@ -35,7 +35,7 @@ function moveSlides(direction) {
 
     // If going back to the first slide, hide the last slide
     if (n === 1 && direction === "left") {
-        const lastSlide = document.getElementById(10);
+        const lastSlide = document.getElementById(7);
         if (lastSlide) {
             lastSlide.style.opacity = "0";
             lastSlide.style.zIndex = "0";
