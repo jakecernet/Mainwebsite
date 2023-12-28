@@ -112,7 +112,7 @@ section .content h2 {
    margin-bottom: 20px;
 }
 
-section .content a{
+section .content a {
    text-decoration: none;
    color: var(--text2);
    text-align: center;
@@ -303,7 +303,7 @@ section .content ul li {
    border-radius: 10px;
    transition: 0.3s ease;
    text-align: center;
-   width: 80vw;
+   width: 60vw;
    height: 80vh;
    position: absolute;
    left: 50%;
@@ -452,7 +452,6 @@ footer p {
 }
 
 .fa-chevron-down:hover {
-   filter: drop-shadow(0 0 10px rgb(255, 255, 255));
    scale: 1.1;
 }
 
@@ -598,42 +597,14 @@ footer p {
       font-size: 25px;
    }
 
-   .timeline {
-      margin-top: 20px;
-   }
-
-   .event {
-      padding: 20px;
-   }
-
-   .event h3 {
-      font-size: 16px;
-   }
-
-   .event a {
-      font-size: 14px;
+   .slider .slides .element {
+      width: 80vw;
+      height: 60vh;
    }
 
    .skills ul li {
       padding: 15px;
       font-size: 1em;
-   }
-
-   .project-items {
-      grid-template-columns: repeat(1, 1fr);
-   }
-
-   .project-items .project-item {
-      margin-top: 20px;
-      font-size: 1em;
-   }
-
-   .project-items .project-item h1 {
-      font-size: 20px;
-   }
-
-   .project-items .project-item h3 {
-      font-size: 16px;
    }
 
    .contact .contact-items a {
@@ -675,9 +646,24 @@ footer p {
    .fa-envelope:hover {
       scale: 1;
    }
+}
 
-   .dropdown {
-      height: 48px;
-      padding: 0;
+@keyframes appear {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes disappear {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
    }
 }

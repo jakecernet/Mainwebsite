@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta
 			name="description"
@@ -13,9 +11,7 @@
 			property="og:description"
 			content="Hi! I'm a front-end learning Vegovec and this is my website." />
 		<meta property="og:url" content="cernetic.cc" />
-		<meta
-			property="og:image"
-			content="https://cernetic.cc/files/icons/logo.ico" />
+		<meta property="og:image" content="files/icons/logo.ico" />
 		<meta property="og:site_name" content="Jaka Černetič" />
 		<meta property="og:locale" content="sl_SI" />
 		<meta name="theme-color" content="#317EFB" />
@@ -23,7 +19,6 @@
 		<title>Jaka Černetič</title>
 		<link rel="stylesheet" href="files/style.css" />
 		<link rel="stylesheet" href="files/top.css" />
-		<link rel="stylesheet" href="files/animations.css" />
 		<link rel="icon" href="files/icons/logo.ico" />
 		<link rel="manifest" href="files/manifest.json" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -100,7 +95,7 @@
 			></a>
 		</div>
 		<div class="top" onclick="scrollToTop()">
-			<a alt="link">‎<span class="fa-solid fa-arrow-up"></span></a>
+			<a alt="link" href="#top">‎<span class="fa-solid fa-arrow-up"></span></a>
 		</div>
 		<div class="contents">
 			<section class="about" id="about">
@@ -155,50 +150,19 @@
 				<div class="content">
 					<h1 id="projects-title">My projects</h1>
 					<p>
-						Here are some of my projects. For more click
-						<a href="https://projects.cernetic.cc">
-							here</a>.
+						Here are some of my projects. For more, visit 
+						<a href="https://projects.cernetic.cc"> this website</a>.
 					</p>
 					<div class="slider">
 						<div class="left-arrow" onclick="moveSlides('right')">
-							<a alt="link"
+							<a alt="link" href="#projects"
 								>‎<i class="fa-solid fa-chevron-left"></i
 							></a>
 						</div>
 						<div class="slides">
 							<div class="element" id="1">
 								<img
-									src="files/icons/logo.ico"
-									alt="icon"
-									height="auto"
-									width="20vh" />
-								<h1>cernetic.cc</h1>
-								<h3 id="proj1">My personal website</h3>
-								<span>
-									<i class="fa-brands fa-html5"></i>
-									<i class="fa-brands fa-css3-alt"></i>
-									<i
-										class="fa-brands fa-js-square"
-										style="color: #f0db4f"></i>
-								</span>
-								<a
-									alt="link"
-									href="https://cernetic.cc"
-									target="_blank">
-									‎<i class="fa-solid fa-globe"></i>
-									Website
-								</a>
-								<a
-									alt="link"
-									href="https://github.com/jakecernet/Porfolio"
-									target="_blank">
-									‎<i class="fa-brands fa-github"></i>
-									Github
-								</a>
-							</div>
-							<div class="element" id="2">
-								<img
-									src="https://app.krokyplus.si/favicon.ico"
+									src="files/icons/favicon.ico"
 									alt="icon" />
 								<h1>KrokyPlus</h1>
 								<h3 id="proj2">
@@ -230,49 +194,7 @@
 									Github
 								</a>
 							</div>
-							<div class="element" id="3">
-								<img src="files/icons/logo.webp" />
-								<h1>JSGames</h1>
-								<h3 id="proj3">My JavaScript games</h3>
-								<span>
-									<i class="fa-brands fa-html5"></i>
-									<i class="fa-brands fa-css3-alt"></i>
-									<i
-										class="fa-brands fa-js-square"
-										style="color: #f0db4f"></i>
-								</span>
-								<a
-									alt="link"
-									href="https://github.com/jakecernet/JSGames"
-									target="_blank"
-									>‎<i class="fa-brands fa-github"></i>
-									Github
-								</a>
-								<a
-									alt="link"
-									href="https://jsgames.tech"
-									target="_blank">
-									‎<i class="fa-solid fa-globe"></i>
-									Website
-								</a>
-							</div>
-							<div class="element" id="4">
-								<h1>YT Downloader</h1>
-								<h3 id="proj4">YouTube to MP3 converter</h3>
-								<span>
-									<i
-										class="fa-brands fa-python"
-										style="color: #3776ab"></i>
-								</span>
-								<a
-									alt="link"
-									href="https://github.com/jakecernet/YT_Downloader"
-									target="_blank"
-									>‎<i class="fa-brands fa-github"></i>
-									Github
-								</a>
-							</div>
-							<div class="element" id="5">
+							<div class="element" id="2">
 								<h1>Youtube Downloader</h1>
 								<h3 id="proj6">
 									Online YouTube to MP3 converter
@@ -302,33 +224,7 @@
 									Github
 								</a>
 							</div>
-							<div class="element" id="6">
-								<img src="files/icons/icon.webp" alt="icon" />
-								<h1>Notes</h1>
-								<h3 id="proj5">Simple notes taking website</h3>
-								<span>
-									<i class="fa-brands fa-html5"></i>
-									<i class="fa-brands fa-css3-alt"></i>
-									<i
-										class="fa-brands fa-js-square"
-										style="color: #f0db4f"></i>
-								</span>
-								<a
-									alt="link"
-									href="https://github.com/jakecernet/Notes"
-									target="_blank"
-									>‎<i class="fa-brands fa-github"></i>
-									Github
-								</a>
-								<a
-									alt="link"
-									href="https://notes.cernetic.cc"
-									target="_blank">
-									‎<i class="fa-solid fa-globe"></i>
-									Website
-								</a>
-							</div>
-							<div class="element" id="7">
+							<div class="element" id="3">
 								<h1>IDK Bot</h1>
 								<h3 id="proj10">
 									Discord bot with commands like YouTube
@@ -353,7 +249,7 @@
 							</div>
 						</div>
 						<div class="right-arrow" onclick="moveSlides('left')">
-							<a alt="link"
+							<a alt="link" href="#projects"
 								>‎<i class="fa-solid fa-chevron-right"></i
 							></a>
 						</div>
