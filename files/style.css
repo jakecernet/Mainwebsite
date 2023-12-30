@@ -1,7 +1,7 @@
 .light {
    --text: #111;
    --text2: #202027;
-   --background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+   --background: linear-gradient(135deg, #71e4de 0%, #fdc3d6 100%);
    --item_background: rgba(255, 255, 255, 0.671);
    --glow: 0 0 10px rgb(0, 0, 0);
 }
@@ -9,7 +9,7 @@
 .dark {
    --text: #cde7df;
    --text2: #9191ac;
-   --background: linear-gradient(135deg, #12100e, 60%, #2b4162);
+   --background: linear-gradient(125deg, #000, #01193b);
    --item_background: rgba(3, 6, 17, 0.308);
    --glow: 0 0 10px #b6eada;
 }
@@ -22,16 +22,17 @@
    scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+   display: none;
+}
+
 body {
    display: flex;
    justify-content: center;
    align-items: center;
    background: var(--background);
    background-size: cover;
-}
-
-::-webkit-scrollbar {
-   display: none;
+   overflow-x: hidden;
 }
 
 h1 {
@@ -55,11 +56,11 @@ h1 {
 .slide a::after {
    content: "";
    position: absolute;
-   width: 80%;
-   margin-left: 10%;
+   width: 90%;
+   margin-left: 5%;
    transform: scaleX(0);
    height: 5px;
-   border-radius: 2px;
+   border-radius: 1px;
    bottom: 0;
    left: 0;
    background-color: var(--text);
@@ -231,114 +232,58 @@ section .content ul li {
    width: 100vw;
 }
 
-.slider .left-arrow {
-   position: absolute;
-   top: 50%;
-   left: 0;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   cursor: pointer;
+.slider {
+   width: 70vw;
+   overflow-x: scroll;
+   scroll-snap-align: x mandatory;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
    display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: var(--glow);
-   transition: all 0.3s ease;
-   background: var(--item_background);
-   color: var(--text);
-   margin: 0 20px;
-   z-index: 1000;
-}
-
-.slider .right-arrow {
-   position: absolute;
-   top: 50%;
-   right: 0;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: var(--glow);
-   transition: all 0.3s ease;
-   background: var(--item_background);
-   color: var(--text);
-   margin: 0 20px;
-   z-index: 1000;
-}
-
-.slider .left-arrow:hover {
-   box-shadow: 0 0 15px rgb(0, 0, 0);
-}
-
-.slider .right-arrow:hover {
-   box-shadow: 0 0 15px rgb(0, 0, 0);
-}
-
-.slider .left-arrow:active {
-   scale: 0.9;
-}
-
-.slider .right-arrow:active {
-   scale: 0.9;
-}
-
-.slider .slides {
-   display: flex;
-   width: 100%;
-   height: 80vh;
-}
-
-.slider .slides .element {
-   background: var(--item_background);
-   padding: 30px;
-   font-size: 1.2em;
-   border-radius: 2px;
-   color: var(--light-blue);
-   margin: 10px;
-   box-sizing: border-box;
-   box-shadow: var(--glow);
+   flex-direction: row;
    border-radius: 10px;
-   transition: 0.3s ease;
+   gap: 20px;
+   padding: 20px;
+}
+
+.slider .element {
+   background: var(--item_background);
+   padding: 20px;
+   font-size: 1.2em;
+   color: var(--text);
    text-align: center;
-   width: 60vw;
-   height: 80vh;
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   scroll-snap-align: start;
+   scroll-snap-stop: always;
+   scroll-snap-coordinate: 0% 0%;
+   scroll-snap-destination: 0% 0%;
+   border-radius: 10px;
+   width: 100%;
+   border: 1px solid var(--text);
 }
 
-.slider .slides .element img {
-   width: 10vh;
-   margin-bottom: 20px;
-}
-
-.slider .slides .element h1 {
+.slider .element h1 {
    margin-top: 10px;
    margin-bottom: 10px;
    color: var(--text);
 }
 
-.slider .slides .element h3 {
+.slider .element h3 {
    margin-top: 10px;
    margin-bottom: 10px;
    color: var(--text);
 }
 
-.slider .slides .element span {
+.slider .element span {
    margin-top: 20px;
    margin-bottom: 10px;
    font-size: 2em;
    font-weight: 600;
 }
 
-.slider .slides .element a {
+.slider .element a {
    text-decoration: none;
    color: var(--text);
    display: flex;
@@ -346,13 +291,13 @@ section .content ul li {
    flex-direction: row;
    align-items: center;
    background: var(--item_background);
-   padding: 10px;
+   padding: 15px 20px;
    border-radius: 10px;
-   margin: 20px auto;
+   margin: 20px;
    max-width: 300px;
 }
 
-.slider .slides .element a:hover {
+.slider .element a:hover {
    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
@@ -378,10 +323,10 @@ section .content ul li {
    padding: 20px;
    font-size: 1.2em;
    border-radius: 2px;
-   color: var(--light-blue);
+   color: var(--text2);
    margin: 20px;
    box-sizing: border-box;
-   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
    border-radius: 10px;
    transition: 0.3s ease;
    text-align: center;
@@ -597,11 +542,6 @@ footer p {
       font-size: 25px;
    }
 
-   .slider .slides .element {
-      width: 80vw;
-      height: 60vh;
-   }
-
    .skills ul li {
       padding: 15px;
       font-size: 1em;
@@ -645,6 +585,11 @@ footer p {
 
    .fa-envelope:hover {
       scale: 1;
+   }
+
+   .friends ul li:hover {
+      scale: 1;
+      box-shadow: 0 0 10px rgb(71, 71, 71);
    }
 }
 
