@@ -190,5 +190,16 @@ header .welcome-text p {
     white-space: wrap;
     overflow: hidden;
     border-right: 2px solid var(--text2);
-    margin: 8px 12px
+    margin: 8px 12px;
+    animation: 3.5styping steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
