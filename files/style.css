@@ -1,9 +1,61 @@
+h1,
+section .content h2 {
+   color: var(--text);
+   font-size: 30px
+}
+
+.top a,
+h1 {
+   font-size: 30px
+}
+
+*,
+.slider {
+   scroll-behavior: smooth
+}
+
+.slider,
+.slider .element {
+   padding: 20px;
+   border-radius: 10px
+}
+
+.friends h1,
+.slider .element,
+section .content p {
+   text-align: center
+}
+
+.top,
+footer {
+   position: fixed
+}
+
+.fa-chevron-down,
+.fa-discord,
+.fa-envelope,
+.fa-github,
+.fa-globe {
+   font-size: 50px;
+   margin: 10px
+}
+
+.fa-bars,
+.fa-moon,
+.fa-sun,
+.friends ul li a,
+.slider .element a,
+.top a,
+section .content a {
+   text-decoration: none
+}
+
 .light {
    --text: #111;
    --text2: #202027;
    --background: linear-gradient(135deg, #71e4de 0%, #fdc3d6 100%);
    --item_background: rgba(255, 255, 255, 0.671);
-   --glow: 0 0 10px rgb(0, 0, 0);
+   --glow: 0 0 10px rgb(0, 0, 0)
 }
 
 .dark {
@@ -11,19 +63,18 @@
    --text2: #9191ac;
    --background: linear-gradient(125deg, #000, #01193b);
    --item_background: rgba(3, 6, 17, 0.308);
-   --glow: 0 0 10px #b6eada;
+   --glow: 0 0 10px #b6eada
 }
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Segoe UI", Tahoma, Verdana;
-   scroll-behavior: smooth;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
 
 ::-webkit-scrollbar {
-   display: none;
+   display: none
 }
 
 body {
@@ -32,47 +83,18 @@ body {
    align-items: center;
    background: var(--background);
    background-size: cover;
-   overflow-x: hidden;
+   overflow-x: hidden
 }
 
 h1 {
-   font-size: 30px;
-   font-weight: 600;
-   color: var(--text);
+   font-weight: 400;
    top: 0;
    left: 0;
-   margin-bottom: 40px;
+   margin-bottom: 40px
 }
 
-.slide a {
-   text-decoration: none;
-   display: inline-block;
-   position: relative;
-   padding: 10px;
-   cursor: pointer;
-   color: var(--text);
-}
-
-.slide a::after {
-   content: "";
-   position: absolute;
-   width: 90%;
-   margin-left: 5%;
-   transform: scaleX(0);
-   height: 5px;
-   border-radius: 1px;
-   bottom: 0;
-   left: 0;
-   background-color: var(--text);
-   transform-origin: bottom;
-   transition: transform 0.2s ease-out;
-}
-
-.slide a:hover::after {
-   transform: scaleX(1);
-   transform-origin: bottom;
-}
-
+.friends ul,
+.skills ul,
 ul {
    max-width: 850px;
    margin: 0 auto;
@@ -81,11 +103,11 @@ ul {
    justify-content: center;
    align-items: center;
    list-style: none;
-   padding: 0;
+   padding: 0
 }
 
 .contents {
-   margin-top: 100vh;
+   margin-top: 100vh
 }
 
 section {
@@ -96,56 +118,62 @@ section {
    align-items: center;
    flex-wrap: wrap;
    position: relative;
-   margin-top: 20vh;
+   margin-top: 20vh
 }
 
 section .content {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: center
 }
 
 section .content h2 {
-   font-size: 20px;
-   font-weight: 600;
-   color: var(--text);
-   margin-bottom: 20px;
+   font-weight: 350
 }
 
 section .content a {
-   text-decoration: none;
    color: var(--text2);
-   text-align: center;
+   text-align: center
 }
 
 section .content p {
-   font-size: 18px;
+   font-size: 20px;
    font-weight: 300;
    color: var(--text);
-   margin: 20px;
-   text-align: center;
+   margin: 20px
+}
+
+.friends ul li,
+.skills ul li,
+.slider .element {
+   font-size: 1.2em;
+   background: var(--item_background);
+   color: var(--text)
 }
 
 section .content ul {
-   margin-top: 20px;
+   margin: 20px
 }
 
 section .content ul li {
    list-style: none;
    display: flex;
    align-items: center;
-   margin-bottom: 10px;
+   margin: 10px;
    text-decoration: none;
    font-size: 18px;
-   font-weight: 500;
+   font-weight: 400;
    color: var(--text);
-   margin-left: 10px;
-   transition: all 0.3s ease;
+   transition: .3s
+}
+
+.about-text,
+.top {
+   justify-content: center
 }
 
 .top {
-   position: fixed;
    bottom: 40px;
    right: 40px;
    width: 50px;
@@ -153,222 +181,153 @@ section .content ul li {
    border-radius: 50%;
    cursor: pointer;
    display: none;
-   justify-content: center;
    align-items: center;
    box-shadow: var(--glow);
-   transition: all 0.3s ease;
+   transition: .3s;
    background: var(--item_background);
-   z-index: 1000;
+   z-index: 1000
 }
 
 .top a {
-   text-decoration: none;
-   color: var(--text);
-   font-size: 30px;
+   color: var(--text)
 }
 
+.friends ul li:active,
+.skills ul li:active,
 .top:active {
-   scale: 0.9;
+   scale: 0.9
 }
 
+.slider .element a:hover,
 .top:hover {
-   box-shadow: 0 0 15px rgb(0, 0, 0);
+   box-shadow: 0 0 15px #000
 }
 
 .about-text {
    display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
    margin-top: 20px;
-   max-width: 850px;
+   max-width: 850px
+}
+
+.projects,
+.slider .element {
+   display: flex;
+   justify-content: center
 }
 
 .about .content p {
    font-size: 1.5rem;
    font-weight: 200;
-   padding: 15px;
+   padding: 10px
 }
 
-.skills ul {
-   max-width: 850px;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   list-style: none;
-   padding: 0;
-}
-
+.friends ul li,
 .skills ul li {
    padding: 25px;
-   font-size: 1.2em;
-   border-radius: 2px;
-   color: var(--text);
-   margin: 10px;
-   box-shadow: 0 0 4px black;
-   background: var(--item_background);
-   box-sizing: border-box;
-   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
    border-radius: 10px;
+   margin: 10px;
+   box-shadow: 0 0 4px #000;
+   box-sizing: border-box;
+   box-shadow: 0 10px 20px rgba(255, 255, 255, .6);
+   transition: .3s
 }
 
+.friends ul li:hover,
 .skills ul li:hover {
    cursor: pointer;
-   box-shadow: 0 0 10px rgb(71, 71, 71);
-   scale: 1.1;
-}
-
-.skills ul li:active {
-   scale: 0.9;
+   box-shadow: 0 0 10px #474747;
+   scale: 1.05
 }
 
 .projects {
-   display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
-   width: 100vw;
+   width: 100vw
 }
 
 .slider {
-   width: 70vw;
+   width: 80vw;
    overflow-x: scroll;
    scroll-snap-align: x mandatory;
    scroll-snap-type: x mandatory;
-   scroll-behavior: smooth;
    display: flex;
    flex-direction: row;
-   border-radius: 10px;
-   gap: 20px;
-   padding: 20px;
+   gap: 20px
 }
 
 .slider .element {
-   background: var(--item_background);
-   padding: 20px;
-   font-size: 1.2em;
-   color: var(--text);
-   text-align: center;
-   display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
    scroll-snap-align: start;
    scroll-snap-stop: always;
    scroll-snap-coordinate: 0% 0%;
    scroll-snap-destination: 0% 0%;
-   border-radius: 10px;
    width: 100%;
-   border: 1px solid var(--text);
+   border: 1px solid var(--text)
 }
 
-.slider .element h1 {
-   margin-top: 10px;
-   margin-bottom: 10px;
-   color: var(--text);
+.friends,
+.slider .element a {
+   display: flex;
+   justify-content: center
 }
 
+.slider .element h1,
 .slider .element h3 {
    margin-top: 10px;
    margin-bottom: 10px;
-   color: var(--text);
+   color: var(--text)
 }
 
 .slider .element span {
    margin-top: 20px;
    margin-bottom: 10px;
    font-size: 2em;
-   font-weight: 600;
+   font-weight: 600
 }
 
 .slider .element a {
-   text-decoration: none;
    color: var(--text);
-   display: flex;
-   justify-content: center;
    flex-direction: row;
    align-items: center;
    background: var(--item_background);
    padding: 15px 20px;
    border-radius: 10px;
    margin: 20px;
-   max-width: 300px;
-}
-
-.slider .element a:hover {
-   box-shadow: 0 0 15px rgb(0, 0, 0);
+   max-width: 300px
 }
 
 .friends {
-   display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
-   flex-wrap: wrap;
+   flex-wrap: wrap
 }
 
-.friends ul {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+.contact,
+.contact .contact-items {
    justify-content: center;
-   align-items: center;
-   list-style: none;
-}
-
-.friends ul li {
-   background: var(--item_background);
-   padding: 20px;
-   font-size: 1.2em;
-   border-radius: 2px;
-   color: var(--text2);
-   margin: 20px;
-   box-sizing: border-box;
-   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-   border-radius: 10px;
-   transition: 0.3s ease;
-   text-align: center;
+   display: flex
 }
 
 .friends ul li a {
-   text-decoration: none;
-   color: var(--text);
-}
-
-.friends ul li:hover {
-   scale: 1.04;
-   box-shadow: 0 0 10px rgb(71, 71, 71);
-   cursor: pointer;
-}
-
-.friends ul li:active {
-   scale: 0.9;
-}
-
-.friends h1 {
-   text-align: center;
+   color: var(--text)
 }
 
 .contact {
-   display: flex;
-   justify-content: center;
    align-items: center;
-   flex-direction: column;
+   flex-direction: column
 }
 
 .contact .contact-items {
-   display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: row;
    margin-top: 20px;
-   margin-bottom: 180px;
+   margin-bottom: 180px
 }
 
 footer {
-   position: fixed;
    bottom: 0;
    left: 0;
    right: 0;
@@ -378,237 +337,179 @@ footer {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   padding: 10px;
+   padding: 10px
 }
 
 footer p {
    font-size: 12px;
    font-weight: 500;
    color: var(--text);
-   margin-top: 20px;
+   margin-top: 20px
 }
 
 .fa-chevron-down {
-   font-size: 50px;
-   margin: 10px;
    color: var(--text);
    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-   transition: all 0.3s ease;
+   transition: .3s;
+   cursor: pointer
 }
 
-.fa-chevron-down:hover {
-   scale: 1.1;
+.fa-discord,
+.fa-globe {
+   color: var(--text);
+   transition: .3s
 }
 
 .fa-github {
-   font-size: 50px;
-   margin: 10px;
    color: var(--text);
-   transition: all 0.3s ease;
-   border-radius: 50%;
-}
-
-.fa-globe {
-   font-size: 50px;
-   margin: 10px;
-   color: var(--text);
-   transition: all 0.3s ease;
-   border-radius: 50%;
-}
-
-.fa-discord {
-   font-size: 50px;
-   margin: 10px;
-   color: var(--text);
-   transition: all 0.3s ease;
+   transition: .3s;
+   border-radius: 50%
 }
 
 .fa-discord:hover {
    color: #7289da;
    scale: 1.1;
-   animation: discord 1.5s infinite;
+   animation: 1.5s infinite discord
 }
 
 .contact-item .fa-github:hover {
    background: #0b0a0e;
    box-shadow: none;
-   animation: github 1s infinite;
+   animation: 1s infinite github
 }
 
 .fa-html5 {
-   color: #e34f26;
+   color: #e34f26
 }
 
 .fa-css3-alt {
-   color: #264de4;
+   color: #264de4
+}
+
+.fa-bars,
+.fa-envelope,
+.fa-moon,
+.fa-sun {
+   color: var(--text);
+   transition: .3s
 }
 
 @keyframes discord {
    0% {
-      rotate: 0deg;
+      rotate: 0deg
    }
 
+   100%,
    50% {
-      rotate: 360deg;
-   }
-
-   100% {
-      rotate: 360deg;
+      rotate: 360deg
    }
 }
 
 @keyframes github {
-   0% {
-      scale: 1;
+
+   0%,
+   100% {
+      scale: 1
    }
 
    50% {
-      scale: 1.2;
-   }
-
-   100% {
-      scale: 1;
+      scale: 1.2
    }
 }
 
 .fa-envelope {
-   font-size: 50px;
-   margin: 10px;
-   color: var(--text);
-   transition: all 0.3s ease;
    border-radius: 10px;
-   padding: 0 6px;
+   padding: 0 6px
 }
 
 .fa-envelope:hover {
    color: #156492;
-   background: #fff;
+   background: #fff
 }
 
+.fa-moon,
 .fa-sun {
-   text-decoration: none;
    font-size: 18px;
    font-weight: 500;
-   color: var(--text);
-   transition: all 0.3s ease;
-   border-radius: 50%;
+   border-radius: 50%
 }
 
+.fa-moon:hover,
 .fa-sun:hover {
    rotate: 90deg;
-   cursor: pointer;
-}
-
-.fa-moon {
-   text-decoration: none;
-   font-size: 18px;
-   font-weight: 500;
-   color: var(--text);
-   transition: all 0.3s ease;
-   border-radius: 50%;
-}
-
-.fa-moon:hover {
-   rotate: 90deg;
-   cursor: pointer;
+   cursor: pointer
 }
 
 .fa-bars {
-   text-decoration: none;
    font-size: 50px;
-   font-weight: 700;
-   color: var(--text);
-   transition: all 0.3s ease;
+   font-weight: 700
 }
 
 .text2 {
-   color: var(--text2);
+   color: var(--text2)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+
+   .top a,
    section .content h2 {
-      font-size: 25px;
+      font-size: 25px
    }
 
-   section .content p {
-      font-size: 16px;
-   }
-
+   section .content p,
    section .content ul li {
-      font-size: 16px;
-   }
-
-   .top a {
-      font-size: 25px;
+      font-size: 16px
    }
 
    .skills ul li {
       padding: 15px;
-      font-size: 1em;
+      font-size: 1em
    }
 
    .contact .contact-items a {
-      margin: 0 10px;
+      margin: 0 10px
    }
 
    footer p {
-      font-size: 10px;
+      font-size: 10px
    }
 
-   .fa-chevron-down {
-      font-size: 40px;
-   }
-
-   .fa-github {
-      font-size: 40px;
-   }
-
-   .fa-github:hover {
-      scale: 1;
-   }
-
+   .fa-chevron-down,
+   .fa-discord,
+   .fa-envelope,
+   .fa-github,
    .fa-globe {
-      font-size: 40px;
+      font-size: 40px
    }
 
-   .fa-discord {
-      font-size: 40px;
-   }
-
-   .fa-discord:hover {
-      scale: 1;
-   }
-
-   .fa-envelope {
-      font-size: 40px;
-   }
-
-   .fa-envelope:hover {
-      scale: 1;
+   .fa-discord:hover,
+   .fa-envelope:hover,
+   .fa-github:hover {
+      scale: 1
    }
 
    .friends ul li:hover {
       scale: 1;
-      box-shadow: 0 0 10px rgb(71, 71, 71);
+      box-shadow: 0 0 10px #474747
    }
 }
 
 @keyframes appear {
    0% {
-      opacity: 0;
+      opacity: 0
    }
 
    100% {
-      opacity: 1;
+      opacity: 1
    }
 }
 
 @keyframes disappear {
    0% {
-      opacity: 1;
+      opacity: 1
    }
 
    100% {
-      opacity: 0;
+      opacity: 0
    }
 }
